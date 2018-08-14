@@ -1,7 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
-	<!-- TODO Add Nodes -->
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <left>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="692.0" prefWidth="1122.0" BorderPane.alignment="CENTER">
+         <left>
+            <HBox prefHeight="692.0" prefWidth="235.0" styleClass="sidebar" stylesheets="@application.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Accordion cacheShape="false" centerShape="false" prefHeight="640.0" prefWidth="330.0" scaleShape="false" style="-fx-background-color: #F0F0F7;">
+                     <panes>
+                        <TitledPane styleClass="sidebar" text="Tab1">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: fff;">
+                                 <children>
+                                    <Label layoutX="27.0" layoutY="26.0" text="Teste de tab 1" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Tab2">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Tab3" />
+                     </panes>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Accordion>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <BorderPane prefHeight="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="134.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="244.0">
+                           <children>
+                              <Label contentDisplay="CENTER" text="R" textFill="#e40f0f">
+                                 <font>
+                                    <Font name="System Bold" size="46.0" />
+                                 </font>
+                              </Label>
+                           </children></HBox>
+                        <HBox prefHeight="100.0" prefWidth="244.0">
+                           <children>
+                              <Label contentDisplay="CENTER" text="G" textFill="#10e338">
+                                 <font>
+                                    <Font name="System Bold" size="46.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="244.0">
+                           <children>
+                              <Label contentDisplay="CENTER" text="B" textFill="#125ee3">
+                                 <font>
+                                    <Font name="System Bold" size="46.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </top>
+               <center>
+                  <HBox alignment="TOP_CENTER" style="-fx-min-width: 100%;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefWidth="1000.0" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS" />
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+         </center>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </BorderPane>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="28.0" prefWidth="1132.0" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Processamento digital de imagens" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
 </BorderPane>
