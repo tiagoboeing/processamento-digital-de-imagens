@@ -3,12 +3,15 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
@@ -53,51 +56,76 @@
                <BorderPane.margin>
                   <Insets left="10.0" />
                </BorderPane.margin>
-               <top>
-                  <HBox alignment="CENTER" prefHeight="134.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
-                     <children>
-                        <HBox prefHeight="100.0" prefWidth="244.0">
-                           <children>
-                              <Label contentDisplay="CENTER" text="R" textFill="#e40f0f">
-                                 <font>
-                                    <Font name="System Bold" size="46.0" />
-                                 </font>
-                              </Label>
-                           </children></HBox>
-                        <HBox prefHeight="100.0" prefWidth="244.0">
-                           <children>
-                              <Label contentDisplay="CENTER" text="G" textFill="#10e338">
-                                 <font>
-                                    <Font name="System Bold" size="46.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </HBox>
-                        <HBox prefHeight="100.0" prefWidth="244.0">
-                           <children>
-                              <Label contentDisplay="CENTER" text="B" textFill="#125ee3">
-                                 <font>
-                                    <Font name="System Bold" size="46.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </HBox>
-                     </children>
-                     <padding>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </padding>
-                  </HBox>
-               </top>
                <center>
                   <HBox alignment="TOP_CENTER" style="-fx-min-width: 100%;" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets bottom="10.0" top="10.0" />
                      </BorderPane.margin>
                      <children>
-                        <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefWidth="1000.0" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS" />
+                        <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefWidth="877.0" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS" />
                      </children>
                   </HBox>
                </center>
+               <top>
+                  <VBox prefHeight="200.0" prefWidth="877.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="134.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="244.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" text="R" textFill="#e40f0f">
+                                             <font>
+                                                <Font name="System Bold" size="46.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtR" alignment="BOTTOM_LEFT" prefWidth="100.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="244.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" text="G" textFill="#10e338">
+                                             <font>
+                                                <Font name="System Bold" size="46.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtG" alignment="BOTTOM_LEFT" prefWidth="100.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="244.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" text="B" textFill="#125ee3">
+                                             <font>
+                                                <Font name="System Bold" size="46.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtB" alignment="BOTTOM_LEFT" prefWidth="100.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="877.0" style="-fx-background-color: #13b510;" text="SELECIONAR IMAGEM" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </top>
             </BorderPane>
          </center>
          <BorderPane.margin>
@@ -108,7 +136,7 @@
    <top>
       <HBox alignment="CENTER" prefHeight="28.0" prefWidth="1132.0" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Processamento digital de imagens" textFill="WHITE">
+            <Label text="Processamento Digital de Imagens" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
