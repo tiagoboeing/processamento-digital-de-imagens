@@ -163,11 +163,7 @@
                                           <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
                                           <VBox prefHeight="200.0" prefWidth="100.0">
                                              <children>
-                                                <ImageView fx:id="imageViewResultado" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../../../Desktop/Clavison.jpg" />
-                                                   </image>
-                                                </ImageView>
+                                                <ImageView fx:id="imageViewResultado" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
                                                 <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="271.0" style="-fx-background-color: #ead954;" text="Salvar imagem">
                                                    <graphic>
                                                       <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
