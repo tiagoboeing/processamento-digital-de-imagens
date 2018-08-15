@@ -8,35 +8,126 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <left>
-      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="692.0" prefWidth="1122.0" BorderPane.alignment="CENTER">
+      <BorderPane nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
          <left>
-            <HBox prefHeight="692.0" prefWidth="235.0" styleClass="sidebar" stylesheets="@application.css" BorderPane.alignment="CENTER">
+            <HBox styleClass="sidebar" stylesheets="@application.css" BorderPane.alignment="CENTER">
                <children>
                   <Accordion cacheShape="false" centerShape="false" prefHeight="640.0" prefWidth="330.0" scaleShape="false" style="-fx-background-color: #F0F0F7;">
                      <panes>
-                        <TitledPane styleClass="sidebar" text="Tab1">
+                        <TitledPane styleClass="sidebar" text="Tons de cinza">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: fff;">
                                  <children>
-                                    <Label layoutX="27.0" layoutY="26.0" text="Teste de tab 1" />
+                                    <VBox layoutX="18.6" layoutY="19.6" prefHeight="305.0" prefWidth="289.0" AnchorPane.bottomAnchor="229.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <Label text="Média aritmética">
+                                             <VBox.margin>
+                                                <Insets bottom="15.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox prefWidth="100.0">
+                                             <children>
+                                                <Label text="\%R">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="40.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="100.0">
+                                             <children>
+                                                <Label text="\%G">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="40.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="100.0">
+                                             <children>
+                                                <Label text="\%B">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="40.0" />
+                                             </children>
+                                          </VBox>
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: #5460ea;" text="Calcular" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Label text="Média ponderada">
+                                             <VBox.margin>
+                                                <Insets bottom="15.0" top="20.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox prefWidth="100.0">
+                                             <children>
+                                                <Label text="\%R">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="40.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="100.0">
+                                             <children>
+                                                <Label text="\%G">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="40.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="100.0">
+                                             <children>
+                                                <Label text="\%B">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="40.0" />
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: #5460ea;" text="Calcular" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets top="5.0" />
+                                                   </VBox.margin>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
                                  </children>
                               </AnchorPane>
                            </content>
                         </TitledPane>
-                        <TitledPane animated="false" expanded="false" text="Tab2">
+                        <TitledPane animated="false" expanded="false" text="Linearização">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                            </content>
                         </TitledPane>
-                        <TitledPane animated="false" expanded="false" text="Tab3" />
+                        <TitledPane animated="false" expanded="false" text="Ruídos" />
                      </panes>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
@@ -52,7 +143,7 @@
             </HBox>
          </left>
          <center>
-            <BorderPane prefHeight="200.0" BorderPane.alignment="CENTER">
+            <BorderPane BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets left="10.0" />
                </BorderPane.margin>
@@ -62,25 +153,55 @@
                         <Insets bottom="10.0" top="10.0" />
                      </BorderPane.margin>
                      <children>
-                        <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefWidth="877.0" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS" />
+                        <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefWidth="877.0" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS">
+                           <content>
+                              <VBox>
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fx:id="imageViewResultado" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../Desktop/Clavison.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="271.0" style="-fx-background-color: #ead954;" text="Salvar imagem">
+                                                   <graphic>
+                                                      <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../bin/imgs/cloud-computing.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
                      </children>
                   </HBox>
                </center>
                <top>
-                  <VBox prefHeight="200.0" prefWidth="877.0" BorderPane.alignment="CENTER">
+                  <VBox BorderPane.alignment="CENTER">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="134.0" style="-fx-background-color: #fff;">
+                        <HBox alignment="CENTER" prefHeight="94.0" prefWidth="877.0" style="-fx-background-color: #fff;">
                            <children>
                               <HBox prefHeight="100.0" prefWidth="244.0">
                                  <children>
                                     <VBox prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Label contentDisplay="CENTER" text="R" textFill="#e40f0f">
+                                          <Label fx:id="lblR" contentDisplay="CENTER" text="R" textFill="#e40f0f">
                                              <font>
                                                 <Font name="System Bold" size="46.0" />
                                              </font>
                                           </Label>
-                                          <TextField fx:id="txtR" alignment="BOTTOM_LEFT" prefWidth="100.0" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -89,12 +210,11 @@
                                  <children>
                                     <VBox prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Label contentDisplay="CENTER" text="G" textFill="#10e338">
+                                          <Label fx:id="lblG" contentDisplay="CENTER" text="G" textFill="#10e338">
                                              <font>
                                                 <Font name="System Bold" size="46.0" />
                                              </font>
                                           </Label>
-                                          <TextField fx:id="txtG" alignment="BOTTOM_LEFT" prefWidth="100.0" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -103,12 +223,11 @@
                                  <children>
                                     <VBox prefHeight="200.0" prefWidth="100.0">
                                        <children>
-                                          <Label contentDisplay="CENTER" text="B" textFill="#125ee3">
+                                          <Label fx:id="lblB" contentDisplay="CENTER" text="B" textFill="#125ee3">
                                              <font>
                                                 <Font name="System Bold" size="46.0" />
                                              </font>
                                           </Label>
-                                          <TextField fx:id="txtB" alignment="BOTTOM_LEFT" prefWidth="100.0" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -118,7 +237,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </HBox>
-                        <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="877.0" style="-fx-background-color: #13b510;" text="SELECIONAR IMAGEM" textFill="WHITE">
+                        <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onContextMenuRequested="#abreImagem2" onMouseClicked="#abreImagem1" prefHeight="52.0" prefWidth="877.0" style="-fx-background-color: #13b510;" text="SELECIONAR IMAGEM" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -134,7 +253,7 @@
       </BorderPane>
    </left>
    <top>
-      <HBox alignment="CENTER" prefHeight="28.0" prefWidth="1132.0" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
          <children>
             <Label text="Processamento Digital de Imagens" textFill="WHITE">
                <font>
