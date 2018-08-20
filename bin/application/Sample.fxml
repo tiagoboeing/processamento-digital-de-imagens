@@ -178,8 +178,14 @@
                                     </HBox>
                                     <HBox>
                                        <children>
-                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem1" pickOnBounds="true" preserveRatio="true" />
-                                          <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem2" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem1" onMouseMoved="#rasterImg" pickOnBounds="true" preserveRatio="true">
+                                             <cursor>
+                                                <Cursor fx:constant="CROSSHAIR" />
+                                             </cursor></ImageView>
+                                          <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem2" onMouseMoved="#rasterImg" pickOnBounds="true" preserveRatio="true">
+                                             <cursor>
+                                                <Cursor fx:constant="CROSSHAIR" />
+                                             </cursor></ImageView>
                                           <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fff;">
                                              <children>
                                                 <ImageView fx:id="imageViewResultado" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
@@ -228,7 +234,7 @@
                                        <children>
                                           <Label fx:id="lblR" contentDisplay="CENTER" text="R" textFill="#e40f0f">
                                              <font>
-                                                <Font name="System Bold" size="46.0" />
+                                                <Font name="System Bold" size="32.0" />
                                              </font>
                                           </Label>
                                        </children>
@@ -241,7 +247,7 @@
                                        <children>
                                           <Label fx:id="lblG" contentDisplay="CENTER" text="G" textFill="#10e338">
                                              <font>
-                                                <Font name="System Bold" size="46.0" />
+                                                <Font name="System Bold" size="32.0" />
                                              </font>
                                           </Label>
                                        </children>
@@ -254,7 +260,7 @@
                                        <children>
                                           <Label fx:id="lblB" contentDisplay="CENTER" text="B" textFill="#125ee3">
                                              <font>
-                                                <Font name="System Bold" size="46.0" />
+                                                <Font name="System Bold" size="32.0" />
                                              </font>
                                           </Label>
                                        </children>

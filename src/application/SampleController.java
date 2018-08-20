@@ -7,6 +7,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
+import javafx.scene.input.MouseEvent;
 
 public class SampleController {
 	
@@ -74,6 +76,35 @@ public class SampleController {
 		}
 		
 		return null;
+	}
+	
+	
+	private void verificaCor(Image img, int x, int y){
+		try {
+			Color cor = img.getPixelReader().getColor(x-1, y-1);
+			lblR.setText("R: "+(int) (cor.getRed()*255));
+			lblG.setText("G: "+(int) (cor.getGreen()*255));
+			lblB.setText("B: "+(int) (cor.getBlue()*255));
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
+	@FXML
+	public void rasterImg(MouseEvent evt) {
+		ImageView iw = (ImageView)evt.getTarget();
+		if (iw.getImage() != null) {
+			verificaCor(iw.getImage(), (int)evt.getX(), (int)evt.getY());
+		}
+	}
+	
+	@FXML
+	public void limpaLabel() {
+		lblR.setText("R:");
+		lblG.setText("G:");
+		lblB.setText("B:");
 	}
 	
 }
