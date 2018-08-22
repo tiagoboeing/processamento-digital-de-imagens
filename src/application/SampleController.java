@@ -6,7 +6,9 @@ import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
+import utils.PDIClass;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.input.MouseEvent;
 
@@ -19,6 +21,10 @@ public class SampleController {
 	@FXML Label lblR;
 	@FXML Label lblG;
 	@FXML Label lblB;
+	
+	@FXML TextField txtPercR;
+	@FXML TextField txtPercG;
+	@FXML TextField txtPercB;
 	
 	private File file;
 	private Image img;
@@ -49,6 +55,13 @@ public class SampleController {
 			imageView2.setImage(img);
 			imageView2.setFitWidth(img.getWidth());
 		}
+	}
+	
+	
+	private void atualizaImgResultado() {
+		imageViewResultado.setImage(imgResultado);
+		imageViewResultado.setFitWidth(imgResultado.getWidth());
+		imageViewResultado.setFitHeight(imgResultado.getHeight());
 	}
 	
 	
@@ -105,6 +118,13 @@ public class SampleController {
 		lblR.setText("R:");
 		lblG.setText("G:");
 		lblB.setText("B:");
+	}
+	
+	
+	@FXML
+	public void tonsDeCinza() {	
+		imgResultado = PDIClass.tonsDeCinza(imgResultado);
+		atualizaImgResultado();
 	}
 	
 }
