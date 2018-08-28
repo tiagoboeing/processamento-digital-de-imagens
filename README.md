@@ -36,7 +36,7 @@ pw.setColor(i, j, newColor);
 
 ## Tons de cinza - média ponderada
 <p>A única diferença da média aritmética é que no caso da ponderada, cada canal será multiplicado pelo seu peso. (O peso será informado pelo usuário no formato de porcentagem)</p>
-<b>A soma dos pesos não poderá ultrapas 100% e recomenda-se que ela feche sempre 100%, caso seja inferior o sistema informará com uma janela, porém o funcionamento não será prejudicado.</b>
+<b>A soma dos pesos não poderá ultrapassar 100% e recomenda-se que ela feche sempre 100%, caso seja inferior o sistema informará com uma janela, porém o funcionamento não será prejudicado.</b>
 
 <pre>
 [...]
