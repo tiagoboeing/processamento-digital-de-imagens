@@ -7,12 +7,18 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import utils.PDIClass;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.input.MouseEvent;
 
 public class SampleController {
+
+	//LIMIARIARIZAÇÃO
+	@FXML Slider slider;
 	
 	@FXML ImageView imageView1;
 	@FXML ImageView imageView2;
@@ -122,9 +128,43 @@ public class SampleController {
 	
 	
 	@FXML
-	public void tonsDeCinza() {	
-		imgResultado = PDIClass.tonsDeCinza(imgResultado);
+	public void tonsDeCinza() {
+		imgResultado = PDIClass.tonsDeCinza(imgResultado, 0, 0, 0);
 		atualizaImgResultado();
+	}
+	
+	
+	@FXML
+	public void negativa() {
+		imgResultado = PDIClass.tonsDeCinza(img1, 0, 0, 0);
+		imgResultado = PDIClass.negativa(img1);
+		atualizaImage3();
+	}
+	
+	@FXML
+	public void limiarizacao() {
+		double valor = slider.getValue();
+		valor = valor / 255;
+		img1 = PDIClass.tonsDeCinza(img1,0,0,0);
+		imgResultado = PDIClass.limiarizacao(img1, valor);
+		atualizaImage3();
+		
+	}
+	
+	
+	private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {
+		Alert alert = new Alert(tipo);
+		alert.setTitle(titulo);
+		alert.setHeaderText(cabecalho);
+		alert.setContentText(msg);
+		alert.showAndWait();
+		
+	}
+	
+	private void atualizaImage3() {
+		imageViewResultado.setImage(imgResultado);
+		imageViewResultado.setFitWidth(imgResultado.getWidth());
+		imageViewResultado.setFitHeight(imgResultado.getHeight());	
 	}
 	
 }
