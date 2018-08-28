@@ -86,7 +86,7 @@
                            <content>
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#negativa" prefHeight="54.0" prefWidth="272.0" style="-fx-background-color: #5460ea;" text="CONVERTER" textFill="WHITE" />
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#negativa" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #5460ea;" text="CONVERTER" textFill="WHITE" />
                                  </children>
                               </VBox>
                            </content></TitledPane>
