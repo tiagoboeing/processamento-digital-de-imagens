@@ -9,8 +9,9 @@ Campus: Tubarão/SC
 
 <hr>
 Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Scene Builder - Gluon</b></a>
-
 <hr>
+<img src="https://i.snag.gy/O2zJ50.jpg"/>
+
 #Recursos
 <p>Você poderá abrir no máximo duas imagens</p>
 <p>É possível salvar o resultado em uma pasta do sistema</p>
@@ -102,8 +103,3 @@ Color corAnterior = pr.getColor(i, j); //Consegue pegar a cor de um determinado 
 [...]
 </pre>
           
-
-é obtida com base nas duas imagens
-- Aplicar tons de cinza com média aritmética (baseada nas duas imagens abertas)
-- Aplicar tons de cinza com média ponderada (a soma da porcentagem dos três canais não pode ser superior a 100%)
-<img src="https://i.snag.gy/O2zJ50.jpg"/>
