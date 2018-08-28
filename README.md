@@ -12,7 +12,7 @@ Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Sce
 <hr>
 <img src="https://i.snag.gy/O2zJ50.jpg"/>
 
-#Recursos
+# Recursos
 <p>Você poderá abrir no máximo duas imagens</p>
 <p>É possível salvar o resultado em uma pasta do sistema</p>
 
