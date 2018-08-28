@@ -21,21 +21,23 @@ public class PDIClass {
 			
 			for(int i = 0; i < width; i++) {
 				for(int j = 0; j < height; j++) {
+					
 					Color previousColor = pr.getColor(i, j);
-					double media = (previousColor.getRed() + 
+					double media = ((previousColor.getRed() + 
 									previousColor.getGreen() + 
-									previousColor.getBlue() 
+									previousColor.getBlue()) 
 									/ 3);
 					
 					if(pcR != 0 || pcG != 0 || pcB != 0 ) {
-						media = (previousColor.getRed()*pcR
-								+ previousColor.getGreen()*pcG
-								+ previousColor.getBlue()*pcB)
+						media = (previousColor.getRed() * pcR
+								+ previousColor.getGreen() * pcG
+								+ previousColor.getBlue() * pcB)
 								/100; //Media Ponderada do RGD
 					}
 					
 					Color newColor = new Color(media, media, media, previousColor.getOpacity());
 					pw.setColor(i, j, newColor);
+					
 				}
 			}
 			
@@ -99,10 +101,12 @@ public class PDIClass {
 					Color corAnterior = pr.getColor(i, j); //Consegue pegar a cor de um determinado pixel
 					Color corNova;
 					
-					corNova = new Color((1-corAnterior.getRed()), 
-							(1-corAnterior.getGreen()),
-							(1-corAnterior.getBlue()),
-							corAnterior.getOpacity());
+					corNova = new Color(
+								( 1- corAnterior.getRed()), 
+								(1 - corAnterior.getGreen()),
+								(1 - corAnterior.getBlue()),
+								corAnterior.getOpacity()
+							);
 		
 					pw.setColor(i, j, corNova);
 							

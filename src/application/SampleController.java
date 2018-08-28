@@ -2,23 +2,27 @@ package application;
 
 import java.io.File;
 
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.stage.FileChooser;
-import utils.PDIClass;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Color;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
+
+import utils.PDIClass;
+
 
 public class SampleController {
 
-	//LIMIARIARIZAÇÃO
-	@FXML Slider slider;
 	
 	@FXML ImageView imageView1;
 	@FXML ImageView imageView2;
@@ -32,45 +36,18 @@ public class SampleController {
 	@FXML TextField txtPercG;
 	@FXML TextField txtPercB;
 	
+	// vars auxiliares
 	private File file;
-	private Image img;
+	// private Image img;
+	
 	private Image img1;
 	private Image img2;
 	private Image imgResultado;
 	
+	// LIMIARIARIZAÇÃO
+	@FXML Slider slider;
 	
-	@FXML
-	public void abreImagem1() {
-		file = selectImagem();
-		if (file != null) {
-			img = new Image(file.toURI().toString());
-			
-			// seta imageView 1
-			imageView1.setImage(img);
-			imageView1.setFitWidth(img.getWidth());
-		}
-	}
-	
-	@FXML
-	public void abreImagem2() {
-		file = selectImagem();
-		if (file != null) {
-			img = new Image(file.toURI().toString());
-			
-			// seta imageView 1
-			imageView2.setImage(img);
-			imageView2.setFitWidth(img.getWidth());
-		}
-	}
-	
-	
-	private void atualizaImgResultado() {
-		imageViewResultado.setImage(imgResultado);
-		imageViewResultado.setFitWidth(imgResultado.getWidth());
-		imageViewResultado.setFitHeight(imgResultado.getHeight());
-	}
-	
-	
+	// seleção de imagem
 	@FXML
 	private File selectImagem() {
 		FileChooser fileChooser = new FileChooser();
@@ -83,7 +60,7 @@ public class SampleController {
 										"*.bmp", "*.BMP"
 									));
 		
-		fileChooser.setInitialDirectory(new File("C:\\Users\\tiago\\eclipse-workspace\\processamento-digital-de-imagens\\src\\imgs"));
+		fileChooser.setInitialDirectory(new File("C:/Users/tiago/eclipse-workspace/processamento-digital-de-imagens/src/imgs"));
 		File imgSelect = fileChooser.showOpenDialog(null);
 		
 		try {
@@ -95,6 +72,64 @@ public class SampleController {
 		}
 		
 		return null;
+	}
+	
+	// abrir arquivo 1
+	@FXML
+	public void abreImagem1() {
+		file = selectImagem();
+		if (file != null) {
+			img1 = new Image(file.toURI().toString());
+			
+			// seta imageView 1
+			imageView1.setImage(img1);
+			imageView1.setFitWidth(img1.getWidth());
+		}
+	}
+	
+	// abrir arquivo 2
+	@FXML
+	public void abreImagem2() {
+		file = selectImagem();
+		if (file != null) {
+			img2 = new Image(file.toURI().toString());
+			
+			// seta imageView 1
+			imageView2.setImage(img2);
+			imageView2.setFitWidth(img2.getWidth());
+		}
+	}
+	
+	
+	private void atualizaImageResultado() {
+		imageViewResultado.setImage(imgResultado);
+		imageViewResultado.setFitWidth(imgResultado.getWidth());
+		//imageViewResultado.setFitHeight(imgResultado.getHeight());	
+	}
+	
+	
+	@FXML
+	public void salvar() {
+		if(imgResultado != null) {
+			FileChooser fileChooser = new FileChooser();
+			fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Imagem", "*.png"));
+			fileChooser.setInitialDirectory(new File("C:/Users/tiago/eclipse-workspace/processamento-digital-de-imagens/src/imgs"));
+			File file = fileChooser.showSaveDialog(null);
+			
+			if(file != null) {
+				BufferedImage bImg = SwingFXUtils.fromFXImage(imgResultado, null);
+				try {
+					ImageIO.write(bImg, "PNG", file);
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			
+		}else {
+			exibeMsg("Salvar imagem.", "Não é possivel salvar imagem.","Não há nenhuma imagem modificada.", AlertType.ERROR);
+			
+		}
 	}
 	
 	
@@ -110,7 +145,6 @@ public class SampleController {
 		}
 	}
 	
-	
 	@FXML
 	public void rasterImg(MouseEvent evt) {
 		ImageView iw = (ImageView)evt.getTarget();
@@ -125,20 +159,39 @@ public class SampleController {
 		lblG.setText("G:");
 		lblB.setText("B:");
 	}
-	
-	
+
 	@FXML
 	public void tonsDeCinza() {
-		imgResultado = PDIClass.tonsDeCinza(imgResultado, 0, 0, 0);
-		atualizaImgResultado();
+		imgResultado = PDIClass.tonsDeCinza(img1, 0, 0, 0);
+		atualizaImageResultado();
 	}
 	
-	
+	@FXML
+	public void tonsDeCinzaPonderada() {
+		
+		int pcR = Integer.parseInt(txtPercR.getText());
+		int pcG = Integer.parseInt(txtPercG.getText());
+		int pcB = Integer.parseInt(txtPercB.getText());
+
+		if(pcR + pcG + pcB <= 100) {
+			
+			if(pcR + pcG + pcB < 100) {
+				exibeMsg("Escala de Cinza", "Aviso", "Valor é menor que 100, foi igual a : " + (pcR+pcG+pcB), AlertType.WARNING);
+			}
+			
+			imgResultado = PDIClass.tonsDeCinza(img1, pcR, pcG, pcB);
+			atualizaImageResultado();
+			
+		}else {
+			exibeMsg("Escala de Cinza", "Erro", "Somatório maior que 100", AlertType.ERROR);
+		}
+	}
+
 	@FXML
 	public void negativa() {
 		imgResultado = PDIClass.tonsDeCinza(img1, 0, 0, 0);
 		imgResultado = PDIClass.negativa(img1);
-		atualizaImage3();
+		atualizaImageResultado();
 	}
 	
 	@FXML
@@ -146,11 +199,21 @@ public class SampleController {
 		double valor = slider.getValue();
 		valor = valor / 255;
 		img1 = PDIClass.tonsDeCinza(img1,0,0,0);
-		imgResultado = PDIClass.limiarizacao(img1, valor);
-		atualizaImage3();
-		
+		imgResultado = PDIClass.limiarizacao(img1,valor);
+		atualizaImageResultado();		
 	}
 	
+	
+//	@FXML
+//	public void limiarizacao() {
+//		double valor = slider.getValue();
+//		valor = valor / 255;
+//		
+//		img1 = PDIClass.tonsDeCinza(img1, 0, 0, 0);
+//		imgResultado = PDIClass.limiarizacao(img1, valor);
+//		atualizaImageResultado();
+//	}
+//	
 	
 	private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {
 		Alert alert = new Alert(tipo);
@@ -161,10 +224,5 @@ public class SampleController {
 		
 	}
 	
-	private void atualizaImage3() {
-		imageViewResultado.setImage(imgResultado);
-		imageViewResultado.setFitWidth(imgResultado.getWidth());
-		imageViewResultado.setFitHeight(imgResultado.getHeight());	
-	}
 	
 }
