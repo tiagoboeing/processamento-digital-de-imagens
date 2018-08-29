@@ -245,7 +245,7 @@
       </BorderPane>
    </left>
    <top>
-      <HBox alignment="CENTER" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" onMouseClicked="#vizinhos" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
          <children>
             <Label text="Processamento Digital de Imagens" textFill="WHITE">
                <font>

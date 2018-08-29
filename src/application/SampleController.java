@@ -19,6 +19,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 
 import utils.PDIClass;
+import utils.Vizinhos;
 
 
 public class SampleController {
@@ -46,6 +47,11 @@ public class SampleController {
 	
 	// LIMIARIARIZAÇÃO
 	@FXML Slider slider;
+	
+	@FXML
+	public void vizinhos() {
+		Vizinhos.retornaVizinhos(img1, 200, 1200);
+	}
 	
 	// seleção de imagem
 	@FXML
@@ -144,6 +150,22 @@ public class SampleController {
 			// TODO: handle exception
 		}
 	}
+	
+	
+	// retorna vizinhos de um pixel
+	private void vizinhos(Image img, int x, int y){
+		try {
+			
+			Color cor = img.getPixelReader().getColor(x-1, y-1);
+			lblR.setText("R: "+(int) (cor.getRed()*255));
+			lblG.setText("G: "+(int) (cor.getGreen()*255));
+			lblB.setText("B: "+(int) (cor.getBlue()*255));
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
 	
 	@FXML
 	public void rasterImg(MouseEvent evt) {

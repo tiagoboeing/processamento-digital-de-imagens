@@ -7,6 +7,7 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.paint.Color;
 
 public class PDIClass {
+		
 	
 	public static Image tonsDeCinza(Image image, double pcR, double pcG, double pcB) {
 		
@@ -121,5 +122,10 @@ public class PDIClass {
 		}
 	}
 	
-
+	// calcula media de uma cor
+	// return -> double	
+	public static Double mediaCores(double valorR, double valorG, double valorB) {
+		return (valorR + valorG + valorB) /3;
+	}
+	
 }
