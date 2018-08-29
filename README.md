@@ -1,11 +1,14 @@
-# Processamento Digital de Imagens
-<i>Dá pra arrumar as fotos e tentar deixar bonitinhas com essas funções.</i><br>
 
-Curso: Ciência da Computação <br>
-Semestre: 2018/2 <br>
-Professor: Clávison Zapelini<br>
-Universidade: UNISUL<br>
-Campus: Tubarão/SC
+# Processamento Digital de Imagens
+<i>Dá pra arrumar as fotos e tentar deixar bonitinhas com essas funções.</i>
+ - Curso: Ciência da Computação 
+ - Semestre: 2018/2 
+ - Professor: Clávison Zapelini
+ - Universidade: UNISUL
+ - Campus: Tubarão/SC
+
+**Licença de uso**
+Este repositório está totalmente licenciado open-source para a comunidade de desenvolvedores e acadêmicos. Fique livre para clonar, modificar, reproduzir e fazer o que bem entender com este acervo. Fica dispensada a citação de créditos/fonte por qualquer pessoa e em qualquer parte do mundo, ficando isento de quaisquer legislações de licenciamento de software. Todo e qualquer conteúdo tem caráter educacional.
 
 <hr>
 Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Scene Builder - Gluon</b></a>
