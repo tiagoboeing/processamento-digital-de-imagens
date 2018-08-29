@@ -2,9 +2,7 @@ package utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
-import Entidades.CorMedia;
 import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.PixelWriter;
@@ -13,14 +11,14 @@ import javafx.scene.paint.Color;
 
 public class Vizinhos {
 	
-	// vizinho[0] = [R, G, B, media]
-	static ArrayList<CorMedia> vizinhos = new ArrayList<CorMedia>();
-
-
+	public static ArrayList<Double> vizinhosR = new ArrayList<Double>();
+	public static ArrayList<Double> vizinhosG = new ArrayList<Double>();
+	public static ArrayList<Double> vizinhosB = new ArrayList<Double>();
+	
+	//	Retorna os vizinhos de um pixel	
 	public static void retornaVizinhos(Image image, double posicaoX, double posicaoY) {
 		
 		try {
-			
 			int width = (int)image.getWidth();
 			int height = (int)image.getHeight();
 			
@@ -42,45 +40,74 @@ public class Vizinhos {
 							
 							if(z == 0) {
 								Color corVizinho = pr.getColor(contX-1, contY+1);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
+							
 							if(z == 1) { 
 								Color corVizinho = pr.getColor(contX, contY-1);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 2) { 
 								Color corVizinho = pr.getColor(contX+1, contY+1);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 3) { 
 								Color corVizinho = pr.getColor(contX-1, contY);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 4) { 
 								Color corVizinho = pr.getColor(contX, contY);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 5) { 
 								Color corVizinho = pr.getColor(contX+1, contY);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 6) { 
 								Color corVizinho = pr.getColor(contX-1, contY-1);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 7) { 
 								Color corVizinho = pr.getColor(contX, contY-1);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
 							}
 							if(z == 8) { 
 								Color corVizinho = pr.getColor(contX+1, contY-1);
-								vizinhos.add(CorMedia.novaCorMedia(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue(), PDIClass.mediaCores(corVizinho.getRed(), corVizinho.getGreen(), corVizinho.getBlue())));
-							}	
+								vizinhosR.add(corVizinho.getRed());
+								vizinhosG.add(corVizinho.getGreen());
+								vizinhosB.add(corVizinho.getBlue());
+							}							
 						}
+
+						// obrigatório antes de calcular mediana
+						ordenaListas();
+						
+						System.out.println("\n \n MEDIANA");
+						listaVizinhos();
+						
+						System.out.println("\n \n MEDIANA");
+						System.out.println(mediana(vizinhosR));
+						
+						limpaListas();
 					}
-	
 				}
-			}			
+			}		
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -88,14 +115,45 @@ public class Vizinhos {
 		}		
 	}
 	
-//	public static void ordenaArrayList() {
-//		Collections.sort (vizinhos, new Comparator() {
-//            public int compare(Object o1, Object o2) {
-//                CorMedia p1 = (CorMedia) o1;
-//                CorMedia p2 = (CorMedia) o2;
-//                return p1.inicio < p2.inicio ? -1 : (p1.inicio > p2.inicio ? +1 : 0);
-//            }
-//        });
-//	}
+	public static void ordenaListas() {	
+		Collections.sort(vizinhosR);
+		Collections.sort(vizinhosG);
+		Collections.sort(vizinhosB);
+	}
 	
+	
+	// calcula mediana de uma lista a ser informada
+	public static Double mediana(ArrayList<Double> lista) {		
+
+		int restoDivisao = lista.size() % 2;
+		
+		// tem número ao centro
+        if(restoDivisao > 0) {
+            return lista.get(Math.round(lista.size() / 2));
+        } else {
+        	// caso não exista número ao centro
+            int menor = (lista.size() /2) -1;
+            int maior = (lista.size() /2);
+
+            return (lista.get(menor) + lista.get(maior)) /2;
+        }
+		
+	}
+	
+	
+	// debugger	
+	public static void listaVizinhos() {
+		for(int a = 0; a < vizinhosR.size(); a++) {
+			System.out.println("R:" + vizinhosR.get(a).toString()
+								+ " G:" + vizinhosG.get(a).toString()
+								+ " B:" + vizinhosB.get(a).toString());
+		}
+	}
+	
+	
+	public static void limpaListas() {
+		vizinhosR.clear();
+		vizinhosG.clear();
+		vizinhosB.clear();
+	}
 }

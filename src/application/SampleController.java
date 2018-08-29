@@ -1,7 +1,6 @@
 package application;
 
 import java.io.File;
-
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
@@ -18,6 +17,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 
+import javafx.scene.control.TitledPane;
+import utils.CorAtualUtils;
 import utils.PDIClass;
 import utils.Vizinhos;
 
@@ -37,9 +38,13 @@ public class SampleController {
 	@FXML TextField txtPercG;
 	@FXML TextField txtPercB;
 	
+	@FXML TextField txtPosX;
+	@FXML TextField txtPosY;
+	
+	@FXML TitledPane painelRuido;
+	
 	// vars auxiliares
 	private File file;
-	// private Image img;
 	
 	private Image img1;
 	private Image img2;
@@ -50,7 +55,18 @@ public class SampleController {
 	
 	@FXML
 	public void vizinhos() {
-		Vizinhos.retornaVizinhos(img1, 200, 1200);
+		if(!txtPosX.getText().equals("") && !txtPosX.getText().equals("")) {
+			
+			// elimina pixels das bordas
+			if(Integer.parseInt(txtPosX.getText())-1 < 0 || Integer.parseInt(txtPosY.getText())-1 < 0) {
+				exibeMsg("Bordas não permitidas", "Atenção", "Pixels de borda não são permitidos, pois não há vizinhos para aplicar o efeito. Selecione um pixel mais ao centro.", AlertType.WARNING);
+			} else {
+				Vizinhos.retornaVizinhos(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText()));
+			}
+			
+		} else {
+			exibeMsg("Dados obrigatórios", "Atenção", "Os valores dos eixos X e Y devem ser preenchidos \nVocê pode clicar em qualquer local da imagem 1 para que o software preencha automaticamente", AlertType.INFORMATION);
+		}
 	}
 	
 	// seleção de imagem
@@ -106,13 +122,11 @@ public class SampleController {
 		}
 	}
 	
-	
 	private void atualizaImageResultado() {
 		imageViewResultado.setImage(imgResultado);
 		imageViewResultado.setFitWidth(imgResultado.getWidth());
 		//imageViewResultado.setFitHeight(imgResultado.getHeight());	
 	}
-	
 	
 	@FXML
 	public void salvar() {
@@ -138,10 +152,9 @@ public class SampleController {
 		}
 	}
 	
-	
 	private void verificaCor(Image img, int x, int y){
 		try {
-			Color cor = img.getPixelReader().getColor(x-1, y-1);
+			Color cor = img.getPixelReader().getColor(x, y);
 			lblR.setText("R: "+(int) (cor.getRed()*255));
 			lblG.setText("G: "+(int) (cor.getGreen()*255));
 			lblB.setText("B: "+(int) (cor.getBlue()*255));
@@ -151,27 +164,35 @@ public class SampleController {
 		}
 	}
 	
-	
-	// retorna vizinhos de um pixel
-	private void vizinhos(Image img, int x, int y){
-		try {
+	// ao clicar em mostrar cor da posição selecionada
+	public void mostraCorTela() {
+		
+		if(!txtPosX.getText().equals("") && !txtPosX.getText().equals("")) {
 			
-			Color cor = img.getPixelReader().getColor(x-1, y-1);
-			lblR.setText("R: "+(int) (cor.getRed()*255));
-			lblG.setText("G: "+(int) (cor.getGreen()*255));
-			lblB.setText("B: "+(int) (cor.getBlue()*255));
-			
-		} catch (Exception e) {
-			// TODO: handle exception
+			Integer eixoX = Integer.parseInt(txtPosX.getText());
+			Integer eixoY = Integer.parseInt(txtPosY.getText());
+						
+			exibeMsg("Cor atual", "Dados da cor selecionada", CorAtualUtils.RGBdaPosicao(img1, eixoX, eixoY), AlertType.CONFIRMATION);
 		}
 	}
-	
-	
+		
 	@FXML
 	public void rasterImg(MouseEvent evt) {
 		ImageView iw = (ImageView)evt.getTarget();
 		if (iw.getImage() != null) {
 			verificaCor(iw.getImage(), (int)evt.getX(), (int)evt.getY());
+		}
+	}
+	
+	@FXML
+	public void getPosition(MouseEvent evt) {
+		ImageView iw = (ImageView)evt.getTarget();
+		if (iw.getImage() != null) {
+			
+			painelRuido.setExpanded(true);
+			
+			txtPosX.setText((int)evt.getX()+"");
+			txtPosY.setText((int)evt.getY()+"");
 		}
 	}
 	
@@ -224,18 +245,6 @@ public class SampleController {
 		imgResultado = PDIClass.limiarizacao(img1,valor);
 		atualizaImageResultado();		
 	}
-	
-	
-//	@FXML
-//	public void limiarizacao() {
-//		double valor = slider.getValue();
-//		valor = valor / 255;
-//		
-//		img1 = PDIClass.tonsDeCinza(img1, 0, 0, 0);
-//		imgResultado = PDIClass.limiarizacao(img1, valor);
-//		atualizaImageResultado();
-//	}
-//	
 	
 	private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {
 		Alert alert = new Alert(tipo);

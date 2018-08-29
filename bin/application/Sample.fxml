@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
@@ -90,6 +91,90 @@
                                  </children>
                               </VBox>
                            </content></TitledPane>
+                        <TitledPane fx:id="painelRuido" animated="false" expanded="false" text="Redução de ruído (Denoiser) e obter cor">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="176.0" text="*Funciona apenas na Imagem 1">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="TOP_LEFT" prefHeight="27.0" prefWidth="250.0" style="-fx-text-fill: #990000;" text="Clique com o mouse para capturar a posição">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox prefHeight="62.0" prefWidth="288.0">
+                                       <children>
+                                          <Label text="Posição X (horizontal)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtPosX" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="63.0" prefWidth="288.0">
+                                       <children>
+                                          <Label text="Posição Y (vertical)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtPosY" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="29.0" prefWidth="288.0">
+                                       <children>
+                                          <Label text="Qual técnica utilizar?">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="33.0" prefWidth="288.0">
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="Vizinhança em cruz">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="33.0" prefWidth="288.0">
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" prefHeight="20.0" prefWidth="234.0" text="Vizinhança em X">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="33.0" prefWidth="288.0">
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="Vizinhança em cruz">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                    <HBox>
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#mostraCorTela" style="-fx-background-color: #2df3d9; -fx-text-fill: #000;" text="Obter cor" textFill="WHITE" />
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#vizinhos" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #990000;" text="Reduzir ruído" textFill="WHITE" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
                      </panes>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
@@ -140,7 +225,7 @@
                                     </HBox>
                                     <HBox>
                                        <children>
-                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem1" onMouseMoved="#rasterImg" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem1" onMouseClicked="#getPosition" onMouseMoved="#rasterImg" pickOnBounds="true" preserveRatio="true">
                                              <cursor>
                                                 <Cursor fx:constant="CROSSHAIR" />
                                              </cursor></ImageView>
