@@ -107,8 +107,7 @@ public class PDIClass {
 							);
 		
 					pw.setColor(i, j, corNova);
-							
-										
+												
 				}
 			}
 			
@@ -121,7 +120,7 @@ public class PDIClass {
 		}
 	}
 	
-	public static Image reducaoDeRuido(Image imagem) {
+	public static Image reducaoDeRuido(Image imagem, String modoReducao) {
 		try {
 			int w = (int)imagem.getWidth(); //Largura
 			int h = (int)imagem.getHeight(); //Altura
@@ -130,24 +129,34 @@ public class PDIClass {
 			WritableImage wi = new WritableImage(w, h); //Serve para escrever na imagem
 			PixelWriter pw = wi.getPixelWriter();//Escrever o pixel. Utilizar o pw para gravar o que deseja
 			
+			// largura
 			for (int i = 0; i < w; i++) {
+				
+				// altura
 				for (int j = 0; j < h; j++) {
 					
-					Color corAnterior = pr.getColor(i, j); //Consegue pegar a cor de um determinado pixel
-					Color corNova;
+					double[] mediana = null;
 					
+					if(modoReducao.equalsIgnoreCase("x")) { 
+						mediana = Vizinhos.retornaVizinhosX(imagem, i-1, j-1); 
+					} else {
+						mediana = Vizinhos.retornaVizinhosX(imagem, i, j); 
+					}
+					
+					System.out.println(mediana[0]);
+					
+					Color corNova;
 					corNova = new Color(
-								(1 - corAnterior.getRed()), 
-								(1 - corAnterior.getGreen()),
-								(1 - corAnterior.getBlue()),
-								corAnterior.getOpacity()
-							);
+								(mediana[0]), 
+								(mediana[1]),
+								(mediana[2]), 
+								1);
 		
-					pw.setColor(i, j, corNova);
-							
+					pw.setColor(i, j, corNova);	
 										
 				}
 			}
+
 			
 			return wi;
 			

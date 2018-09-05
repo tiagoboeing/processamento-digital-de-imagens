@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -41,7 +42,12 @@ public class SampleController {
 	@FXML TextField txtPosX;
 	@FXML TextField txtPosY;
 	
-	@FXML TitledPane painelRuido;
+	@FXML TitledPane painelCor;
+	
+	// radio buttons
+	@FXML RadioButton radioX;
+	@FXML RadioButton radioCruz;
+	@FXML RadioButton radio3x3;
 	
 	// vars auxiliares
 	private File file;
@@ -53,20 +59,27 @@ public class SampleController {
 	// LIMIARIARIZAÇÃO
 	@FXML Slider slider;
 	
+	
 	@FXML
-	public void vizinhos() {
-		if(!txtPosX.getText().equals("") && !txtPosX.getText().equals("")) {
-			
-			// elimina pixels das bordas
-			if(Integer.parseInt(txtPosX.getText())-1 < 0 || Integer.parseInt(txtPosY.getText())-1 < 0) {
-				exibeMsg("Bordas não permitidas", "Atenção", "Pixels de borda não são permitidos, pois não há vizinhos para aplicar o efeito. Selecione um pixel mais ao centro.", AlertType.WARNING);
-			} else {
-				Vizinhos.retornaVizinhos(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText()));
-			}
-			
+	public void reducaoRuido() {
+		
+		// vizinhança em cruz
+		if(radio3x3.isSelected() == true) {
+			PDIClass.reducaoDeRuido(img1, "3x3");
+			atualizaImageResultado();
+			//Vizinhos.retornaVizinhos(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText()));
+		} else if (radioX.isSelected() == true) {
+			PDIClass.reducaoDeRuido(img1, "x");
+			atualizaImageResultado();
+			//System.out.println(Vizinhos.retornaVizinhosX(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText())));
+		} else if (radioCruz.isSelected() == true) {
+			PDIClass.reducaoDeRuido(img1, "cruz");
+			atualizaImageResultado();
+			//Vizinhos.retornaVizinhosCruz(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText()));
 		} else {
-			exibeMsg("Dados obrigatórios", "Atenção", "Os valores dos eixos X e Y devem ser preenchidos \nVocê pode clicar em qualquer local da imagem 1 para que o software preencha automaticamente", AlertType.INFORMATION);
+			exibeMsg("Selecione um tipo de redução", "Atenção", "É necessário selecionar uma técnica de aplicação da redução de ruído.", AlertType.WARNING);
 		}
+
 	}
 	
 	// seleção de imagem
@@ -189,7 +202,7 @@ public class SampleController {
 		ImageView iw = (ImageView)evt.getTarget();
 		if (iw.getImage() != null) {
 			
-			painelRuido.setExpanded(true);
+			painelCor.setExpanded(true);
 			
 			txtPosX.setText((int)evt.getX()+"");
 			txtPosY.setText((int)evt.getY()+"");
@@ -252,7 +265,6 @@ public class SampleController {
 		alert.setHeaderText(cabecalho);
 		alert.setContentText(msg);
 		alert.showAndWait();
-		
 	}
 	
 	
