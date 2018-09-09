@@ -1,6 +1,7 @@
 package application;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
@@ -14,6 +15,9 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.PixelReader;
+import javafx.scene.image.PixelWriter;
+import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
@@ -21,11 +25,10 @@ import javafx.stage.FileChooser;
 import javafx.scene.control.TitledPane;
 import utils.CorAtualUtils;
 import utils.PDIClass;
-import utils.Vizinhos;
+import utils.ReducaoRuido;
 
 
 public class SampleController {
-
 	
 	@FXML ImageView imageView1;
 	@FXML ImageView imageView2;
@@ -59,23 +62,73 @@ public class SampleController {
 	// LIMIARIARIZAÇÃO
 	@FXML Slider slider;
 	
-	
 	@FXML
 	public void reducaoRuido() {
 		
+		WritableImage wi = new WritableImage((int)img1.getWidth(), (int)img1.getHeight());
+		PixelWriter pw = wi.getPixelWriter();
+		
 		// vizinhança em cruz
 		if(radio3x3.isSelected() == true) {
-			PDIClass.reducaoDeRuido(img1, "3x3");
-			atualizaImageResultado();
-			//Vizinhos.retornaVizinhos(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText()));
+
+			for(int largura = 1; largura < (int)img1.getWidth()-1; largura++) {
+				for(int altura = 1; altura < (int)img1.getHeight()-1; altura++) {
+					
+					ArrayList<Double> medianas = ReducaoRuido.reducao3x3(img1, largura, altura);
+					
+					Color corNova = new Color(medianas.get(0),
+											medianas.get(1),
+											medianas.get(2),
+											1);
+					
+					pw.setColor(largura, altura, corNova);
+					
+				}
+			}		
+			
+			imageViewResultado.setImage(wi);
+			imageViewResultado.setFitWidth(wi.getWidth());
+			
 		} else if (radioX.isSelected() == true) {
-			PDIClass.reducaoDeRuido(img1, "x");
-			atualizaImageResultado();
-			//System.out.println(Vizinhos.retornaVizinhosX(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText())));
+			
+			for(int largura = 1; largura < (int)img1.getWidth()-1; largura++) {
+				for(int altura = 1; altura < (int)img1.getHeight()-1; altura++) {
+					
+					ArrayList<Double> medianas = ReducaoRuido.reducaoEmX(img1, largura, altura);
+					
+					Color corNova = new Color(medianas.get(0),
+											medianas.get(1),
+											medianas.get(2),
+											1);
+					
+					pw.setColor(largura, altura, corNova);
+					
+				}
+			}		
+			
+			imageViewResultado.setImage(wi);
+			imageViewResultado.setFitWidth(wi.getWidth());
+			
 		} else if (radioCruz.isSelected() == true) {
-			PDIClass.reducaoDeRuido(img1, "cruz");
-			atualizaImageResultado();
-			//Vizinhos.retornaVizinhosCruz(img1, Integer.parseInt(txtPosX.getText()), Integer.parseInt(txtPosY.getText()));
+
+			for(int largura = 1; largura < (int)img1.getWidth()-1; largura++) {
+				for(int altura = 1; altura < (int)img1.getHeight()-1; altura++) {
+					
+					ArrayList<Double> medianas = ReducaoRuido.reducaoEmCruz(img1, largura, altura);
+					
+					Color corNova = new Color(medianas.get(0),
+											medianas.get(1),
+											medianas.get(2),
+											1);
+					
+					pw.setColor(largura, altura, corNova);
+					
+				}
+			}		
+			
+			imageViewResultado.setImage(wi);
+			imageViewResultado.setFitWidth(wi.getWidth());
+			
 		} else {
 			exibeMsg("Selecione um tipo de redução", "Atenção", "É necessário selecionar uma técnica de aplicação da redução de ruído.", AlertType.WARNING);
 		}

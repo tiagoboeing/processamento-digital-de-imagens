@@ -119,53 +119,7 @@ public class PDIClass {
 			
 		}
 	}
-	
-	public static Image reducaoDeRuido(Image imagem, String modoReducao) {
-		try {
-			int w = (int)imagem.getWidth(); //Largura
-			int h = (int)imagem.getHeight(); //Altura
-			
-			PixelReader pr = imagem.getPixelReader(); //Com o pixelReader é possivel pegar as cores
-			WritableImage wi = new WritableImage(w, h); //Serve para escrever na imagem
-			PixelWriter pw = wi.getPixelWriter();//Escrever o pixel. Utilizar o pw para gravar o que deseja
-			
-			// largura
-			for (int i = 0; i < w; i++) {
-				
-				// altura
-				for (int j = 0; j < h; j++) {
-					
-					double[] mediana = null;
-					
-					if(modoReducao.equalsIgnoreCase("x")) { 
-						mediana = Vizinhos.retornaVizinhosX(imagem, i-1, j-1); 
-					} else {
-						mediana = Vizinhos.retornaVizinhosX(imagem, i, j); 
-					}
-					
-					System.out.println(mediana[0]);
-					
-					Color corNova;
-					corNova = new Color(
-								(mediana[0]), 
-								(mediana[1]),
-								(mediana[2]), 
-								1);
-		
-					pw.setColor(i, j, corNova);	
-										
-				}
-			}
 
-			
-			return wi;
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-			
-		}
-	}
 	
 	// calcula media de uma cor
 	// return -> double	
