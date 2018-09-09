@@ -15,7 +15,6 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.image.PixelReader;
 import javafx.scene.image.PixelWriter;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
@@ -23,9 +22,11 @@ import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 
 import javafx.scene.control.TitledPane;
+import utils.Adicao;
 import utils.CorAtualUtils;
 import utils.PDIClass;
 import utils.ReducaoRuido;
+import utils.Subtracao;
 
 
 public class SampleController {
@@ -44,6 +45,10 @@ public class SampleController {
 	
 	@FXML TextField txtPosX;
 	@FXML TextField txtPosY;
+	
+	// Adição e Subtração	
+	@FXML TextField txtPorcImg1;
+	@FXML TextField txtPorcImg2;
 	
 	@FXML TitledPane painelCor;
 	
@@ -310,6 +315,30 @@ public class SampleController {
 		img1 = PDIClass.tonsDeCinza(img1,0,0,0);
 		imgResultado = PDIClass.limiarizacao(img1,valor);
 		atualizaImageResultado();		
+	}
+	
+	@FXML
+	public void adicao() {
+		
+		String porcentagemImg1 = txtPorcImg1.getText();
+		String porcentagemImg2 = txtPorcImg2.getText();;
+		
+		if(txtPorcImg1.getText().isEmpty()) { porcentagemImg1 = "50"; }
+		if(txtPorcImg2.getText().isEmpty()) { porcentagemImg2 = "50"; }
+		
+		if((Double.parseDouble(porcentagemImg1) + Double.parseDouble(porcentagemImg2)) <= 100) {
+			imgResultado = Adicao.adicao(img1, img2, porcentagemImg1, porcentagemImg2);
+			atualizaImageResultado();
+		} else {
+			exibeMsg("Valores excedem 100%", "Erro", "Soma das duas porcentagem é maior que 100", AlertType.ERROR);
+		}
+		
+	}
+
+	@FXML
+	public void subtracao() {
+		imgResultado = Subtracao.subtracao(img1, img2);
+		atualizaImageResultado();
 	}
 	
 	private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {

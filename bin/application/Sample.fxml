@@ -145,6 +145,49 @@
                               </VBox>
                            </content>
                         </TitledPane>
+                        <TitledPane fx:id="painelCor1" animated="false" expanded="false" text="Adição/Subtração">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <VBox prefHeight="62.0" prefWidth="288.0">
+                                       <children>
+                                          <Label text="\% Imagem 1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtPorcImg1" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="63.0" prefWidth="288.0">
+                                       <children>
+                                          <Label text="\% Imagem 2">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="txtPorcImg2" />
+                                       </children>
+                                    </VBox>
+                                    <HBox>
+                                       <children>
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#subtracao" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #e24141; -fx-text-fill: #fff;" text="Subtração" textFill="WHITE" />
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#adicao" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: #4c4242; -fx-text-fill: #fff;" text="Adição" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Inverter verticalmente/horizontalmente">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #259df9;" text="INVERTER" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
                         <TitledPane fx:id="painelCor" animated="false" expanded="false" text="Obter cor">
                            <content>
                               <VBox prefHeight="200.0" prefWidth="100.0">
