@@ -186,9 +186,9 @@ Nesta etapa calculamos as medianas de todos os canais de todos os vizinhos da fo
 Obtemos as medianas de cada canal do pixel atual e aplicamos a ele.
 
     Color corNova = new Color(medianas.get(0),
-							medianas.get(1),
-							medianas.get(2),
-							1);
+				medianas.get(1),
+				medianas.get(2),
+				1);
 	pw.setColor(largura, altura, corNova);
 
 **Como você percebeu, não aplicamos o valor da mediana a todos os vizinhos do pixel em questão, mas sim apenas ao pixel. A técnica escolhida influencia apenas em quais e quantos vizinhos utilizaremos para calcular a mediana.**
