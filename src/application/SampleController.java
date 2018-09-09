@@ -67,6 +67,9 @@ public class SampleController {
 	// LIMIARIARIZAÇÃO
 	@FXML Slider slider;
 	
+	// onMouseEvent	
+	String array[][] = new String[2][3];
+	
 	@FXML
 	public void reducaoRuido() {
 		
@@ -339,6 +342,37 @@ public class SampleController {
 	public void subtracao() {
 		imgResultado = Subtracao.subtracao(img1, img2);
 		atualizaImageResultado();
+	}
+	
+	@FXML
+	public void inverter() {
+		
+	}
+	
+	@FXML
+	public void moldura() {
+		
+		System.out.println(array[0][2] + " X=" + array[0][0] + " Y=" + array[0][1]);
+		System.out.println(array[1][2] + " X=" + array[1][0] + " Y=" + array[1][1]);
+		
+	}
+	
+	@FXML
+	public void onMouseEvent(MouseEvent evt) {
+		
+		// mouse pressionado - posicao inicial	
+		if(evt.getEventType().getName().equals("MOUSE_PRESSED")) {
+			array[0][0] = evt.getX()+"";
+			array[0][1] = evt.getY()+"";
+			array[0][2] = "MOUSE_PRESSED";
+		}
+		// mouse solto - posicao final	
+		if(evt.getEventType().getName().equals("MOUSE_RELEASED")) {
+			array[1][0] = evt.getX()+"";
+			array[1][1] = evt.getY()+"";
+			array[1][2] = "MOUSE_RELEASED";
+		}
+		
 	}
 	
 	private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {

@@ -285,11 +285,11 @@
                                     </HBox>
                                     <HBox>
                                        <children>
-                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem1" onMouseClicked="#getPosition" onMouseMoved="#rasterImg" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="imageView1" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem1" onMouseClicked="#getPosition" onMouseMoved="#rasterImg" onMousePressed="#onMouseEvent" onMouseReleased="#onMouseEvent" pickOnBounds="true" preserveRatio="true">
                                              <cursor>
                                                 <Cursor fx:constant="CROSSHAIR" />
                                              </cursor></ImageView>
-                                          <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem2" onMouseMoved="#rasterImg" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="270.0" onContextMenuRequested="#abreImagem2" onMouseClicked="#getPosition" onMouseMoved="#rasterImg" onMousePressed="#onMouseEvent" onMouseReleased="#onMouseEvent" pickOnBounds="true" preserveRatio="true">
                                              <cursor>
                                                 <Cursor fx:constant="CROSSHAIR" />
                                              </cursor></ImageView>
@@ -390,7 +390,7 @@
       </BorderPane>
    </left>
    <top>
-      <HBox alignment="CENTER" onMouseClicked="#reducaoRuido" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" onMouseClicked="#moldura" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
          <children>
             <Label text="Processamento Digital de Imagens" textFill="WHITE">
                <font>

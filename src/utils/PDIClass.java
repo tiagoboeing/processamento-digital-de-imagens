@@ -20,6 +20,7 @@ public class PDIClass {
 			WritableImage wi = new WritableImage(width, height);
 			PixelWriter pw = wi.getPixelWriter();
 			
+			
 			for(int i = 0; i < width; i++) {
 				for(int j = 0; j < height; j++) {
 					
