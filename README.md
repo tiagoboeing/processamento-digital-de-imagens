@@ -1,4 +1,5 @@
 
+
 # Processamento Digital de Imagens
 <i>Dá pra arrumar as fotos e tentar deixar bonitinhas com essas funções.</i>
  - Curso: Ciência da Computação 
@@ -105,4 +106,89 @@ Color corAnterior = pr.getColor(i, j); //Consegue pegar a cor de um determinado 
   pw.setColor(i, j, corNova);
 [...]
 </pre>
-          
+
+## Redução de ruído
+Você poderá remover ruído utilizando três técnicas:
+
+![Técnicas de redução de ruído](https://snag.gy/ZRpIlu.jpg)
+
+ - **Vizinhança em cruz:** vizinhos da vertical e horizontal a partir do pixel atual central
+ - **Vizinhança em X:** vizinhos das duas diagonais do pixel atual
+ - **Vizinhança 3x3:** todos os vizinhos do pixel atual
+
+<p>A lógica utilizada baseia-se em vários `for`</p>
+<p>Ao utilizar uma imagem com grandes dimensões o computador executará um processo longo, fazendo com que travamentos ocorram e o tempo de processamento seja cada vez maior.</p>
+<p>É recomendado otimizar o código utilizando array multidimensional ou outras técnicas.</p>
+
+**Como funciona?**
+O método `ReducaoRuido.reducao3x3(img1, largura, altura)` retorna um ArrayList com a mediana de cada canal da imagem (RGB). Para reduzir ruído devemos aplicar a mediana aos vizinhos do pixel atual visitado.
+
+### Na prática (pseudocódigo)
+
+**Descobrimos as medidas da imagem**
+
+    int width = (int)image.getWidth();
+	int height = (int)image.getHeight();
+
+**Percorremos cada pixel da imagem**
+
+    // largura X
+	for(int contX = 0; contX < width; contX++) {
+				
+	// altura Y
+	for(int contY = 0; contY < height; contY++) {
+
+**Descobrimos os vizinhos do pixel que estamos visitando e adicionamos ao ArrayList os valores de seu RGB, para calcularmos a mediana posteriormente**
+
+    if(contX == posicaoX && contY == posicaoY) {											
+		// percorre todos os vizinhos
+		for(int z = 0; z < 9; z++) {
+			
+			if(z == 0) {
+				Color corVizinho = pr.getColor(contX-1, contY+1);
+				vizinhosR.add(corVizinho.getRed());
+				vizinhosG.add(corVizinho.getGreen());
+				vizinhosB.add(corVizinho.getBlue());
+			}
+			
+			[...]
+Ordenamos a lista anteriormente e chamamos o método **`mediana(ArrayList<>)`**
+
+**Calcula a mediana de uma lista informada**
+
+    public static Double mediana(ArrayList<Double> lista) {		
+
+		int restoDivisao = lista.size() % 2;
+		
+		// tem número ao centro
+        if(restoDivisao > 0) {
+            return lista.get(Math.round(lista.size() / 2));
+        } else {
+        	// caso não exista número ao centro
+            int menor = (lista.size() /2) -1;
+            int maior = (lista.size() /2);
+
+            return (lista.get(menor) + lista.get(maior)) /2;
+        }
+	}
+**Adicionamos a mediana de cada canal em um ArrayList que será retornado**
+
+    medianaCanais.add(mediana(vizinhosR));
+	medianaCanais.add(mediana(vizinhosG));
+	medianaCanais.add(mediana(vizinhosB));
+
+Nesta etapa calculamos as medianas de todos os canais de todos os vizinhos da forma de redução de ruído escolhida. Retornamos um ArrayList contendo as mesmas.
+
+ - **ArrayList[0]** - mediana do canal ( R )
+- **ArrayList[1]** - mediana do canal ( G )
+-  **ArrayList[2]** - mediana do canal ( B )
+
+Obtemos as medianas de cada canal do pixel atual e aplicamos a ele.
+
+    Color corNova = new Color(medianas.get(0),
+							medianas.get(1),
+							medianas.get(2),
+							1);
+	pw.setColor(largura, altura, corNova);
+
+**Como você percebeu, não aplicamos o valor da mediana a todos os vizinhos do pixel em questão, mas sim apenas ao pixel. A técnica escolhida influencia apenas em quais e quantos vizinhos utilizaremos para calcular a mediana.**
