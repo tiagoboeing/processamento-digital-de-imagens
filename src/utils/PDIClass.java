@@ -107,8 +107,7 @@ public class PDIClass {
 							);
 		
 					pw.setColor(i, j, corNova);
-							
-										
+												
 				}
 			}
 			
@@ -120,43 +119,7 @@ public class PDIClass {
 			
 		}
 	}
-	
-	public static Image reducaoDeRuido(Image imagem) {
-		try {
-			int w = (int)imagem.getWidth(); //Largura
-			int h = (int)imagem.getHeight(); //Altura
-			
-			PixelReader pr = imagem.getPixelReader(); //Com o pixelReader é possivel pegar as cores
-			WritableImage wi = new WritableImage(w, h); //Serve para escrever na imagem
-			PixelWriter pw = wi.getPixelWriter();//Escrever o pixel. Utilizar o pw para gravar o que deseja
-			
-			for (int i = 0; i < w; i++) {
-				for (int j = 0; j < h; j++) {
-					
-					Color corAnterior = pr.getColor(i, j); //Consegue pegar a cor de um determinado pixel
-					Color corNova;
-					
-					corNova = new Color(
-								(1 - corAnterior.getRed()), 
-								(1 - corAnterior.getGreen()),
-								(1 - corAnterior.getBlue()),
-								corAnterior.getOpacity()
-							);
-		
-					pw.setColor(i, j, corNova);
-							
-										
-				}
-			}
-			
-			return wi;
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-			
-		}
-	}
+
 	
 	// calcula media de uma cor
 	// return -> double	

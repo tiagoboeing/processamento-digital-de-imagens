@@ -10,6 +10,7 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -30,9 +31,9 @@
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: fff;">
                                  <children>
-                                    <VBox layoutX="18.6" layoutY="19.6" prefHeight="305.0" prefWidth="289.0" AnchorPane.bottomAnchor="229.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                    <VBox layoutX="30.7" layoutY="31.7" prefHeight="292.0" prefWidth="268.0" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
                                        <children>
-                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#tonsDeCinza" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: #5460ea;" text="Média aritmética" textFill="WHITE" />
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#tonsDeCinza" prefHeight="56.0" prefWidth="268.0" style="-fx-background-color: #5460ea;" text="Média aritmética" textFill="WHITE" />
                                           <VBox prefWidth="100.0">
                                              <children>
                                                 <Label text="\%R">
@@ -63,7 +64,7 @@
                                                 <TextField fx:id="txtPercB" prefHeight="40.0" />
                                              </children>
                                           </VBox>
-                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#tonsDeCinzaPonderada" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: #5460ea;" text="Média ponderada" textFill="WHITE">
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#tonsDeCinzaPonderada" prefHeight="54.0" prefWidth="247.0" style="-fx-background-color: #5460ea;" text="Média ponderada" textFill="WHITE">
                                              <VBox.margin>
                                                 <Insets top="5.0" />
                                              </VBox.margin>
@@ -78,8 +79,8 @@
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <Slider fx:id="slider" blockIncrement="5.0" max="255.0" prefHeight="49.0" prefWidth="308.0" showTickMarks="true" value="126.0" />
-                                    <Button contentDisplay="CENTER" defaultButton="true" layoutY="37.0" mnemonicParsing="false" onAction="#limiarizacao" prefHeight="25.0" prefWidth="308.0" style="-fx-background-color: #5460ea;" text="Aplicar limiarização" textFill="WHITE" />
+                                    <Slider fx:id="slider" blockIncrement="5.0" max="255.0" prefHeight="64.0" prefWidth="308.0" showTickMarks="true" value="126.0" />
+                                    <Button contentDisplay="CENTER" defaultButton="true" layoutY="78.0" mnemonicParsing="false" onAction="#limiarizacao" prefHeight="54.0" prefWidth="308.0" style="-fx-background-color: #5460ea;" text="Aplicar limiarização" textFill="WHITE" />
                                  </children></AnchorPane>
                            </content>
                         </TitledPane>
@@ -91,7 +92,60 @@
                                  </children>
                               </VBox>
                            </content></TitledPane>
-                        <TitledPane fx:id="painelRuido" animated="false" expanded="false" text="Redução de ruído (Denoiser) e obter cor">
+                        <TitledPane animated="false" expanded="false" text="Redução de ruído (Denoiser) e obter cor">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="47.0" prefWidth="176.0" text="*Funciona apenas na Imagem 1">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox prefHeight="29.0" prefWidth="288.0">
+                                       <children>
+                                          <Label text="Qual técnica utilizar?">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="113.0" prefWidth="286.0">
+                                       <children>
+                                          <RadioButton fx:id="radioCruz" mnemonicParsing="false" text="Vizinhança em cruz">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="groupRadio" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioX" mnemonicParsing="false" text="Vizinhança em X" toggleGroup="$groupRadio">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radio3x3" mnemonicParsing="false" text="Vizinhança em 3x3" toggleGroup="$groupRadio">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                    <HBox>
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#reducaoRuido" prefHeight="32.0" prefWidth="280.0" style="-fx-background-color: #990000;" text="Reduzir ruído" textFill="WHITE" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane fx:id="painelCor" animated="false" expanded="false" text="Obter cor">
                            <content>
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
@@ -125,48 +179,11 @@
                                           <TextField fx:id="txtPosY" />
                                        </children>
                                     </VBox>
-                                    <VBox prefHeight="29.0" prefWidth="288.0">
-                                       <children>
-                                          <Label text="Qual técnica utilizar?">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox prefHeight="33.0" prefWidth="288.0">
-                                       <children>
-                                          <RadioButton mnemonicParsing="false" text="Vizinhança em cruz">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </RadioButton>
-                                       </children>
-                                    </VBox>
-                                    <VBox prefHeight="33.0" prefWidth="288.0">
-                                       <children>
-                                          <RadioButton mnemonicParsing="false" prefHeight="20.0" prefWidth="234.0" text="Vizinhança em X">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </RadioButton>
-                                       </children>
-                                    </VBox>
-                                    <VBox prefHeight="33.0" prefWidth="288.0">
-                                       <children>
-                                          <RadioButton mnemonicParsing="false" text="Vizinhança em cruz">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </RadioButton>
-                                       </children>
-                                    </VBox>
                                     <HBox>
                                        <children>
                                           <HBox>
                                              <children>
-                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#mostraCorTela" style="-fx-background-color: #2df3d9; -fx-text-fill: #000;" text="Obter cor" textFill="WHITE" />
-                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#vizinhos" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #990000;" text="Reduzir ruído" textFill="WHITE" />
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#mostraCorTela" prefHeight="32.0" prefWidth="283.0" style="-fx-background-color: #2df3d9; -fx-text-fill: #000;" text="Obter cor" textFill="WHITE" />
                                              </children>
                                           </HBox>
                                        </children>
@@ -252,7 +269,7 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Button>
-                                          <Button mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="270.0" style="-fx-background-color: #ead954;" text="Salvar imagem">
+                                          <Button mnemonicParsing="false" onAction="#salvar" prefHeight="43.0" prefWidth="321.0" style="-fx-background-color: #ead954;" text="Salvar imagem">
                                              <graphic>
                                                 <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
@@ -330,7 +347,7 @@
       </BorderPane>
    </left>
    <top>
-      <HBox alignment="CENTER" onMouseClicked="#vizinhos" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" onMouseClicked="#reducaoRuido" style="-fx-background-color: #2E2E2E;" BorderPane.alignment="CENTER">
          <children>
             <Label text="Processamento Digital de Imagens" textFill="WHITE">
                <font>
