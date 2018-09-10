@@ -158,7 +158,7 @@ Você poderá remover ruído utilizando três técnicas:
 ![3x3](https://i.snag.gy/l1sDPo.jpg)
 
 **Como funciona?**
-O método `ReducaoRuido.reducao3x3(img1, largura, altura)` retorna um ArrayList com a mediana de cada canal da imagem (RGB). Para reduzir ruído devemos aplicar a mediana aos vizinhos do pixel atual visitado.
+O método `ReducaoRuido.reducao3x3(img1, largura, altura)` retorna um ArrayList com a mediana de cada canal da imagem (RGB). Para reduzir ruído devemos aplicar a mediana dos vizinhos do pixel atual visitado a ele.
 
 ### Na prática (pseudocódigo)
 
