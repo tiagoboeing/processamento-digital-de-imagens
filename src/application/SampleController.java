@@ -11,6 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -24,6 +25,7 @@ import javafx.stage.FileChooser;
 import javafx.scene.control.TitledPane;
 import utils.Adicao;
 import utils.CorAtualUtils;
+import utils.Moldura;
 import utils.PDIClass;
 import utils.ReducaoRuido;
 import utils.Subtracao;
@@ -69,6 +71,12 @@ public class SampleController {
 	
 	// onMouseEvent	
 	String array[][] = new String[2][3];
+	
+	// moldura
+	private int x1, y1, x2, y2;
+	@FXML CheckBox molduraAtiva; 
+	private String evtTarget;
+	
 	
 	@FXML
 	public void reducaoRuido() {
@@ -349,30 +357,84 @@ public class SampleController {
 		
 	}
 	
+//	@FXML
+//	public void moldura() {
+//		
+////		System.out.println(array[0][2] + " X=" + array[0][0] + " Y=" + array[0][1]);
+////		System.out.println(array[1][2] + " X=" + array[1][0] + " Y=" + array[1][1]);
+//		
+//		Integer x1 = Integer.parseInt(array[0][0]);
+//		Integer y1 = Integer.parseInt(array[0][1]);
+//		
+//		Integer x2 = Integer.parseInt(array[1][0]);
+//		Integer y2 = Integer.parseInt(array[1][1]);
+//		
+//		imgResultado = Moldura.moldura(img1, x1, x2, y1, y2);
+//		
+//	}
+	
 	@FXML
-	public void moldura() {
+	public void moldura(){
 		
-		System.out.println(array[0][2] + " X=" + array[0][0] + " Y=" + array[0][1]);
-		System.out.println(array[1][2] + " X=" + array[1][0] + " Y=" + array[1][1]);
+		if(evtTarget.equalsIgnoreCase("imageView1")) { 
+			imgResultado = Moldura.moldura(img1, x1, x2, y1, y2);
+		}
+		if(evtTarget.equalsIgnoreCase("imageView2")) { 
+			imgResultado = Moldura.moldura(img2, x1, x2, y1, y2);
+		}
 		
+		atualizaImageResultado();
+	}
+	
+	
+//	@FXML
+//	public void onMouseEvent(MouseEvent evt) {
+//		
+//		// mouse pressionado - posicao inicial	
+//		if(evt.getEventType().getName().equals("MOUSE_PRESSED")) {
+//			array[0][0] = evt.getX()+"";
+//			array[0][1] = evt.getY()+"";
+//			array[0][2] = "MOUSE_PRESSED";
+//		}
+//		// mouse solto - posicao final	
+//		if(evt.getEventType().getName().equals("MOUSE_RELEASED")) {
+//			array[1][0] = evt.getX()+"";
+//			array[1][1] = evt.getY()+"";
+//			array[1][2] = "MOUSE_RELEASED";
+//			
+//			moldura();
+//		}
+//		
+//	}
+	
+	@FXML
+	public void mousePressed(MouseEvent evt){
+		ImageView iw = (ImageView)evt.getTarget();
+		
+		// descobre em qual imagem estamos trabalhando		
+		if(evt.getTarget().equals(imageView1)) { evtTarget = "imageView1"; }
+		if(evt.getTarget().equals(imageView2)) { evtTarget = "imageView2"; }
+		
+
+		if (molduraAtiva.isSelected() == true) {
+			if (iw.getImage() != null ) {
+				x1 = (int)evt.getX();
+				y1 = (int)evt.getY();
+			}
+		}
 	}
 	
 	@FXML
-	public void onMouseEvent(MouseEvent evt) {
-		
-		// mouse pressionado - posicao inicial	
-		if(evt.getEventType().getName().equals("MOUSE_PRESSED")) {
-			array[0][0] = evt.getX()+"";
-			array[0][1] = evt.getY()+"";
-			array[0][2] = "MOUSE_PRESSED";
+	public void mouseReleased(MouseEvent evt){
+		ImageView iw = (ImageView)evt.getTarget();
+
+		if (molduraAtiva.isSelected() == true) {
+			if (iw.getImage() != null) {
+				x2 = (int)evt.getX();
+				y2 = (int)evt.getY();
+				moldura();
+			}
 		}
-		// mouse solto - posicao final	
-		if(evt.getEventType().getName().equals("MOUSE_RELEASED")) {
-			array[1][0] = evt.getX()+"";
-			array[1][1] = evt.getY()+"";
-			array[1][2] = "MOUSE_RELEASED";
-		}
-		
 	}
 	
 	private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {
