@@ -12,6 +12,7 @@
 **Licença de uso**
 Este repositório está totalmente licenciado open-source para a comunidade de desenvolvedores e acadêmicos. Fique livre para clonar, modificar, reproduzir e fazer o que bem entender com este acervo. Fica dispensada a citação de créditos/fonte por qualquer pessoa e em qualquer parte do mundo, ficando isento de quaisquer legislações de licenciamento de software. Todo e qualquer conteúdo tem caráter educacional.
 <hr>
+
 **Você poderá aplicar as seguintes técnicas para manipulação de imagens:**
 
  - Conversão para tons de cinza (preto e branco) utilizando:
