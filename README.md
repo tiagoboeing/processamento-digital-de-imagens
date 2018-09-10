@@ -1,5 +1,6 @@
 
 
+
 # Processamento Digital de Imagens
 <i>Dá pra arrumar as fotos e tentar deixar bonitinhas com essas funções.</i>
  - Curso: Ciência da Computação 
@@ -10,6 +11,29 @@
 
 **Licença de uso**
 Este repositório está totalmente licenciado open-source para a comunidade de desenvolvedores e acadêmicos. Fique livre para clonar, modificar, reproduzir e fazer o que bem entender com este acervo. Fica dispensada a citação de créditos/fonte por qualquer pessoa e em qualquer parte do mundo, ficando isento de quaisquer legislações de licenciamento de software. Todo e qualquer conteúdo tem caráter educacional.
+<hr>
+**Você poderá aplicar as seguintes técnicas para manipulação de imagens:**
+
+ - Conversão para tons de cinza (preto e branco) utilizando:
+	 - Média aritmética
+	 - Média ponderada
+ - Aplicar limiarização da imagem
+ - Conversão para modo negativo
+ - Redução de ruído baseada em três técnicas: 
+	 - Vizinhança em cruz
+	 - Vizinhança em x
+	 - Vizinhança 3x3.
+ - Aplicar adição ou subtração utilizando duas imagens
+ - Obter cor RGB de determinada posição da imagem (clique esquerdo do mouse para capturar posição do cursor e cor a ser obtida)
+ - Aplicar moldura em uma das duas imagens
+
+### Problemas conhecidos
+Esta aplicação serve apenas para fins educacionais e prática do algoritmo por trás destes processamentos. O tratamento de erros não foi aplicado.
+
+- Alguns métodos não possuem o devido tratamento de erros, resultando no fechamento/travamento do programa ou logs no console;
+- Os métodos de redução de ruído utilizam vários *for* resultando em um tempo de processamento elevado no caso de imagens com grandes dimensões; É possível utilizar constantes e orientação a objetos para contornar o problema;
+- Ao aplicar moldura ou demais processamentos nos ImageView ocorre de a posição selecionada não ser a mesma do resultado. Para solucionar este problema basta dimensionar a imagem de origem e resultado para as mesmas medidas;
+- Salvamento da imagem de resultado pode não funcionar com alguns métodos;
 
 <hr>
 Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Scene Builder - Gluon</b></a>
