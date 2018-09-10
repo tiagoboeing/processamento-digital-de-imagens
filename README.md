@@ -36,13 +36,17 @@ Esta aplicação serve apenas para fins educacionais e prática do algoritmo por
 <hr>
 Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Scene Builder - Gluon</b></a>
 <hr>
-<img src="https://i.snag.gy/O2zJ50.jpg"/>
+
+![Recursos](https://i.snag.gy/ZQ56Lu.jpg)
 
 # Recursos
 <p>Você poderá abrir no máximo duas imagens</p>
 <p>É possível salvar o resultado em uma pasta do sistema</p>
 
 ## Tons de cinza - média aritmética
+
+![Aritmética](https://i.snag.gy/oczTjb.jpg)
+
 <p>Soma-se os valores atuais de cada pixel da imagem dos três canais (R, G e B) e divide-se pela quantidade de elementos (3).</p>
 <p>Média aritmética: R + G + B / 3</p>
 <p>Após obter-se a média, ela será aplicada pixel a pixel na imagem</p>
@@ -61,6 +65,9 @@ pw.setColor(i, j, newColor);
 </pre>
 
 ## Tons de cinza - média ponderada
+
+![Ponderada](https://i.snag.gy/4RlbT9.jpg)
+
 <p>A única diferença da média aritmética é que no caso da ponderada, cada canal será multiplicado pelo seu peso. (O peso será informado pelo usuário no formato de porcentagem)</p>
 <b>A soma dos pesos não poderá ultrapassar 100% e recomenda-se que ela feche sempre 100%, caso seja inferior o sistema informará com uma janela, porém o funcionamento não será prejudicado.</b>
 
@@ -78,6 +85,9 @@ pw.setColor(i, j, newColor);
 </pre>
 
 ## Negativo
+
+![Negativo](https://i.snag.gy/Ab51jg.jpg)
+
 <p>Para aplicar o efeito negativo é necessário realizar a conversão de uma imagem para tons de cinza</p>
 <pre>
 // Controller
@@ -106,6 +116,9 @@ Color corAnterior = pr.getColor(i, j); //Consegue pegar a cor de um determinado 
 
 ## Limiarização
 <p>Através de um controle deslizante (SLIDER) o usuário informa a porcentagem de limiar desejada. (0 ~ 1)</p>
+
+![Limiarização](https://i.snag.gy/WX4DPA.jpg)
+
 <p>No caso da limiarização, compara-se a porcentagem informada pelo usuário com o valor do canal RED (R) no pixel a ser analisado. </p>
 - Caso o valor do pixel RED seja maior ou igual ( >= ) ao limiar informado, então o pixel em questão passará a ter 100% (1) em todos os canais e a opacidade de sua cor anterior.
 - Caso contrário, a nova cor do pixel em questão será preta e terá a opacidade de sua cor anterior.
@@ -141,6 +154,8 @@ Você poderá remover ruído utilizando três técnicas:
 <p>A lógica utilizada baseia-se em vários `for`</p>
 <p>Ao utilizar uma imagem com grandes dimensões o computador executará um processo longo, fazendo com que travamentos ocorram e o tempo de processamento seja cada vez maior.</p>
 <p>É recomendado otimizar o código utilizando array multidimensional ou outras técnicas.</p>
+
+![3x3](https://i.snag.gy/l1sDPo.jpg)
 
 **Como funciona?**
 O método `ReducaoRuido.reducao3x3(img1, largura, altura)` retorna um ArrayList com a mediana de cada canal da imagem (RGB). Para reduzir ruído devemos aplicar a mediana aos vizinhos do pixel atual visitado.
@@ -214,6 +229,12 @@ Obtemos as medianas de cada canal do pixel atual e aplicamos a ele.
 	pw.setColor(largura, altura, corNova);
 
 **Como você percebeu, não aplicamos o valor da mediana a todos os vizinhos do pixel em questão, mas sim apenas ao pixel. A técnica escolhida influencia apenas em quais e quantos vizinhos utilizaremos para calcular a mediana.**
+
+## Adição/Subtração
+
+![Adição](https://i.snag.gy/LVHgAp.jpg)
+
+*No caso da adição, a soma das porcentagens não poderá ultrapassar 100%.*
 
 ## Moldura em imagem
 É possível aplicar uma "moldura" na imagem (apenas para testes). Normalmente este efeito é utilizado em minimapas em softwares de edição, como Photoshop, Illustrator, CorelDraw e outros.
