@@ -8,13 +8,13 @@ import javafx.scene.paint.Color;
 
 public class Moldura {
 
-	public static Image moldura(Image img1, int x1, int x2, int y1, int y2) {
+	public static Image moldura(Image image, int x1, int x2, int y1, int y2) {
 
 		try {
-			int w1 = (int)img1.getWidth();
-			int h1 = (int)img1.getHeight();
+			int w1 = (int)image.getWidth();
+			int h1 = (int)image.getHeight();
 			
-			PixelReader pr1 = img1.getPixelReader();
+			PixelReader pr1 = image.getPixelReader();
 			
 			WritableImage wi = new WritableImage(w1,h1);
 			PixelWriter pw = wi.getPixelWriter();
