@@ -1,6 +1,3 @@
-
-
-
 # Processamento Digital de Imagens
 <i>Dá pra arrumar as fotos e tentar deixar bonitinhas com essas funções.</i>
  - Curso: Ciência da Computação 
@@ -217,3 +214,98 @@ Obtemos as medianas de cada canal do pixel atual e aplicamos a ele.
 	pw.setColor(largura, altura, corNova);
 
 **Como você percebeu, não aplicamos o valor da mediana a todos os vizinhos do pixel em questão, mas sim apenas ao pixel. A técnica escolhida influencia apenas em quais e quantos vizinhos utilizaremos para calcular a mediana.**
+
+## Moldura em imagem
+É possível aplicar uma "moldura" na imagem (apenas para testes). Normalmente este efeito é utilizado em minimapas em softwares de edição, como Photoshop, Illustrator, CorelDraw e outros.
+
+![Moldura](https://i.snag.gy/cniGpd.jpg)
+
+**Ative a opção de uso de moldura no painel lateral,** segure o mouse sobre a imagem desejada, arraste até a posição final e solte o clique.
+
+### Como funciona?
+
+Este método capta o ato de segurar o clique do mouse. Armazena a posição inicial do clique na imagem nas variáveis: `x1 e y1`. 
+
+Para funcionar nas duas imagens criamos uma variável auxiliar que receberá como string mesmo o nome do imageView que estamos manipulando. Mantive o padrão gerado pelo javafx ('imageView1', 'imageView2')
+
+	@FXML
+	public void mousePressed(MouseEvent evt){
+		ImageView iw = (ImageView)evt.getTarget();
+		
+		// descobre em qual imagem estamos trabalhando		
+		if(evt.getTarget().equals(imageView1)) { evtTarget = "imageView1"; }
+		if(evt.getTarget().equals(imageView2)) { evtTarget = "imageView2"; }
+		
+
+		if (molduraAtiva.isSelected() == true) {
+			if (iw.getImage() != null ) {
+				x1 = (int)evt.getX();
+				y1 = (int)evt.getY();
+			}
+		}
+	}
+
+Já neste segundo método, obtemos a posição final, quando o mouse foi solto. Armazenamos então nas variáveis `x2 e y2`
+
+    @FXML
+    public void mouseReleased(MouseEvent evt){
+    	ImageView iw = (ImageView)evt.getTarget();
+    
+    	if (molduraAtiva.isSelected() == true) {
+    		if (iw.getImage() != null) {
+    			x2 = (int)evt.getX();
+    			y2 = (int)evt.getY();
+    			moldura();
+    		}
+    	}
+    }
+
+Agora que sabemos as duas posições de onde aplicar a borda (início/fim), começa o processo chato... Vamos agora receber a imagem,  varrer largura e altura em um *for* e armazenar em um *PixelWriter* para manipular.
+
+    public static Image moldura(Image image, int x1, int x2, int y1, int y2) { 
+    try { 
+	    [...]
+    } catch();
+    [..]
+
+Dentro do `try{} catch();` - recebemos a imagem e as posições iniciais e finais da moldura.
+
+    [...]
+    int w1 = (int)image.getWidth();
+	int h1 = (int)image.getHeight();
+	
+	PixelReader pr1 = image.getPixelReader();
+	
+	WritableImage wi = new WritableImage(w1,h1);
+	PixelWriter pw = wi.getPixelWriter();
+	
+    // varre imagem e guarda em um Pixel Writter
+    for (int i = 0; i < w1; i++) {
+    	for (int j = 0; j < h1; j++) {
+    		Color prevColor1 = pr1.getColor(i, j);
+    		pw.setColor(i, j, prevColor1);
+    	}
+    }
+
+Agora temos que fazer um *for* para cada eixo (x1, x2, y1, y2). Só assim será possível aplicar a borda.
+
+    // repetir também para x2, y1 e y2
+    // só alterar as variáveis
+    for (int k = x1; k < x2; k++) {
+    	Color prevColor1 = pr1.getColor(k, y1);
+    	if (k <= x2) {
+    		double color1 = (25/255);
+    		double color2 = (1);
+    		double color3 = (40/255);
+    		Color newColor = new Color(color1, color2, color3, prevColor1.getOpacity());
+    		pw.setColor(k, y1, newColor);
+    	}
+    }
+Ao aplicar o *for* para todos os eixos, vamos retornar uma *WritableImage* e exibir na tela. A chamada final do método ficaria simples:
+
+    // lembre que antes criamos uma forma de saber qual imagem estava sendo manipulada
+    imgResultado = Moldura.moldura(img1, x1, x2, y1, y2);
+    imageViewResultado.setImage(imgResultado);
+    imageViewResultado.setFitWidth(imgResultado.getWidth());
+
+[Nesta linha](https://github.com/tiagoboeing/processamento-digital-de-imagens/blob/362d9bf18e043f5c5284bea1ddb9c03bdbb73058/src/application/SampleController.java#L379) dá pra ver como foi feito para que ambas as imagens aceitem o efeito de moldura.
