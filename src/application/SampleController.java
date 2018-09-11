@@ -20,6 +20,7 @@ import javafx.scene.image.PixelWriter;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.scene.transform.Rotate;
 import javafx.stage.FileChooser;
 
 import javafx.scene.control.TitledPane;
@@ -76,6 +77,12 @@ public class SampleController {
 	private int x1, y1, x2, y2;
 	@FXML CheckBox molduraAtiva; 
 	private String evtTarget;
+	
+	// inverter/espelhar/refletir
+	@FXML Slider sliderRotate;
+	@FXML Slider sliderRefletir;
+	@FXML RadioButton eixoX;
+	@FXML RadioButton eixoY;
 	
 	
 	@FXML
@@ -230,7 +237,6 @@ public class SampleController {
 			
 		}else {
 			exibeMsg("Salvar imagem.", "Não é possivel salvar imagem.","Não há nenhuma imagem modificada.", AlertType.ERROR);
-			
 		}
 	}
 	
@@ -284,7 +290,7 @@ public class SampleController {
 		lblG.setText("G:");
 		lblB.setText("B:");
 	}
-
+	
 	@FXML
 	public void tonsDeCinza() {
 		imgResultado = PDIClass.tonsDeCinza(img1, 0, 0, 0);
@@ -353,8 +359,38 @@ public class SampleController {
 	}
 	
 	@FXML
-	public void inverter() {
-		
+	public void rotate() {
+		if(img1 != null) {
+			imgResultado = img1;
+			atualizaImageResultado();
+			
+			imageViewResultado.setRotate(sliderRotate.getValue());
+		} else {
+			exibeMsg("Nenhuma imagem", "Opsss", "Você precisa carregar uma imagem no local 1", AlertType.ERROR);
+		}
+	}
+	
+	@FXML
+	public void refletir() {
+		if(img1 != null) {
+			
+			imgResultado = img1;
+			atualizaImageResultado();
+			
+			if(eixoX.isSelected()) { 
+				imageViewResultado.setRotationAxis(Rotate.X_AXIS);
+				imageViewResultado.setRotate(sliderRefletir.getValue());
+			} 
+			if(eixoY.isSelected()) { 
+				imageViewResultado.setRotationAxis(Rotate.Y_AXIS);
+				imageViewResultado.setRotate(sliderRefletir.getValue());
+			}
+			
+//			imageViewResultado.setRotate(sliderRefletir.getValue());
+
+		} else {
+			exibeMsg("Nenhuma imagem", "Opsss", "Você precisa carregar uma imagem no local 1", AlertType.ERROR);
+		}
 	}
 	
 //	@FXML

@@ -182,9 +182,28 @@
                         </TitledPane>
                         <TitledPane animated="false" expanded="false" text="Inverter verticalmente/horizontalmente">
                            <content>
-                              <VBox prefHeight="200.0" prefWidth="100.0">
+                              <VBox prefHeight="174.0" prefWidth="308.0">
                                  <children>
-                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #259df9;" text="INVERTER" textFill="WHITE" />
+                                    <VBox prefHeight="155.0" prefWidth="286.0">
+                                       <children>
+                                          <Label text="RODAR IMAGEM" />
+                                          <Slider fx:id="sliderRotate" blockIncrement="25.0" majorTickUnit="90.0" max="360.0" prefHeight="73.0" prefWidth="286.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#rotate" prefHeight="35.0" prefWidth="286.0" style="-fx-background-color: #259df9;" text="RODAR IMAGEM" textFill="WHITE" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="218.0" prefWidth="286.0">
+                                       <children>
+                                          <Label prefWidth="58.0" text="REFLETIR" />
+                                          <Slider fx:id="sliderRefletir" blockIncrement="180.0" majorTickUnit="180.0" max="180.0" minorTickCount="0" prefHeight="52.0" prefWidth="286.0" showTickLabels="true" snapToTicks="true" />
+                                          <HBox prefHeight="45.0" prefWidth="286.0">
+                                             <children>
+                                                <RadioButton fx:id="eixoX" mnemonicParsing="false" prefHeight="30.0" prefWidth="132.0" selected="true" text="Eixo X" />
+                                                <RadioButton fx:id="eixoY" mnemonicParsing="false" prefHeight="30.0" prefWidth="132.0" text="Eixo Y" />
+                                             </children>
+                                          </HBox>
+                                          <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#refletir" prefHeight="35.0" prefWidth="286.0" style="-fx-background-color: #259df9;" text="REFLETIR" textFill="WHITE" />
+                                       </children>
+                                    </VBox>
                                  </children>
                               </VBox>
                            </content>
