@@ -43,6 +43,7 @@ Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Sce
 <p>Você poderá abrir no máximo duas imagens</p>
 <p>É possível salvar o resultado em uma pasta do sistema</p>
 
+## Tons de cinza - média aritmética
 <script src="https://gist.github.com/tiagoboeing/c0fd1f693a3df38583e42bd8c98d696e.js"></script>
 
 ## Tons de cinza - média ponderada
