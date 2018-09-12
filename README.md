@@ -44,7 +44,25 @@ Java Fx e telas com <a href="https://gluonhq.com/products/scene-builder/"><b>Sce
 <p>É possível salvar o resultado em uma pasta do sistema</p>
 
 ## Tons de cinza - média aritmética
-<script src="https://gist.github.com/tiagoboeing/c0fd1f693a3df38583e42bd8c98d696e.js"></script>
+
+![Aritmética](https://i.snag.gy/oczTjb.jpg)
+
+<p>Soma-se os valores atuais de cada pixel da imagem dos três canais (R, G e B) e divide-se pela quantidade de elementos (3).</p>
+<p>Média aritmética: R + G + B / 3</p>
+<p>Após obter-se a média, ela será aplicada pixel a pixel na imagem</p>
+
+<pre>
+[...]
+Color previousColor = pr.getColor(i, j);
+  double media = ((previousColor.getRed() + 
+          previousColor.getGreen() + 
+          previousColor.getBlue()) 
+          / 3);
+          
+Color newColor = new Color(media, media, media, previousColor.getOpacity());
+pw.setColor(i, j, newColor);
+[...]
+</pre>
 
 ## Tons de cinza - média ponderada
 
