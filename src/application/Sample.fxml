@@ -293,6 +293,11 @@
                            <content>
                               <VBox>
                                  <children>
+                                    <HBox prefHeight="69.0" prefWidth="865.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#histogram" prefHeight="32.0" prefWidth="866.0" text="HISTOGRAMA" />
+                                       </children>
+                                    </HBox>
                                     <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="862.0">
                                        <children>
                                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="270.0" text="Imagem 1">
@@ -362,7 +367,7 @@
                <top>
                   <VBox BorderPane.alignment="CENTER">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="110.0" prefWidth="877.0" style="-fx-background-color: #fff;">
+                        <HBox alignment="CENTER" prefHeight="79.0" prefWidth="877.0" style="-fx-background-color: #fff;">
                            <children>
                               <HBox prefHeight="100.0" prefWidth="244.0">
                                  <children>

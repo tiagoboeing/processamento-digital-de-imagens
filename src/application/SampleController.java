@@ -1,12 +1,18 @@
 package application;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
 import javafx.embed.swing.SwingFXUtils;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
@@ -22,7 +28,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.transform.Rotate;
 import javafx.stage.FileChooser;
-
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.scene.control.TitledPane;
 import utils.Adicao;
 import utils.CorAtualUtils;
@@ -481,5 +488,26 @@ public class SampleController {
 		alert.showAndWait();
 	}
 	
+	
+	public void histogram(ActionEvent event) {
+	    
+		try {
+			Stage stage = new Stage();
+		    Parent root;
+		    
+			root = FXMLLoader.load(
+			    Histogram.class.getResource("Histogram.fxml"));
+		
+		    stage.setScene(new Scene(root));
+		    stage.setTitle("My modal window");
+		    stage.initModality(Modality.WINDOW_MODAL);
+		    stage.initOwner(((Node)event.getSource()).getScene().getWindow());
+		    
+		    stage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
 }
