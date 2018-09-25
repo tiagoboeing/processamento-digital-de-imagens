@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processamento-digital-de-imagens.eml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processamento-digital-de-imagens.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Histogram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Histogram.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Histogram.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/SampleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Adicao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Adicao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/CorAtualUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/CorAtualUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Inverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Inverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Moldura.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Moldura.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/PDIClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/PDIClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/ReducaoRuido.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/ReducaoRuido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Subtracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Subtracao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Vizinhos_backup.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Vizinhos_backup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slides/[52757-282153]Processamento_digital_de_imagens.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Histogram.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Histogram.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Histogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +29,7 @@
     <session id="-1423867330">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -98,76 +76,7 @@
     <favorites_list name="processamento-digital-de-imagens" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="462" column="24" selection-start-line="462" selection-start-column="24" selection-end-line="462" selection-end-column="24" />
-              <folding>
-                <element signature="e#2196#4242#0" />
-                <element signature="e#4898#5153#0" />
-                <element signature="e#5157#5412#0" />
-                <element signature="e#5416#5626#0" />
-                <element signature="e#5630#6358#0" />
-                <element signature="e#6692#7103#0" />
-                <element signature="e#7108#7302#0" />
-                <element signature="e#7306#7557#0" />
-                <element signature="e#7561#7663#0" />
-                <element signature="e#7667#7786#0" />
-                <element signature="e#7790#8375#0" />
-                <element signature="e#8378#8536#0" />
-                <element signature="e#8540#8762#0" />
-                <element signature="e#8766#9364#0" />
-                <element signature="e#9367#9480#0" />
-                <element signature="e#9484#9771#0" />
-                <element signature="e#9775#10378#0" />
-                <element signature="e#10866#11154#0" />
-                <element signature="e#11682#12115#0" />
-                <element signature="e#12119#12368#0" />
-                <element signature="e#12372#12604#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/Histogram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
-                <element signature="method#limiarizacao#0;class#PDIClass#0" />
-                <element signature="method#negativa#0;class#PDIClass#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -258,7 +167,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537900781994" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537901142868" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -306,12 +215,12 @@
       <updated>1537896207498</updated>
       <workItem from="1537896212628" duration="1004000" />
       <workItem from="1537897251249" duration="1891000" />
-      <workItem from="1537899344463" duration="1437000" />
+      <workItem from="1537899344463" duration="2110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4332000" />
+    <option name="totallyTimeSpent" value="5005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,7 +233,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.14072494" />
       <window_info id="Image Layers" order="1" />
@@ -334,7 +242,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.501462" side_tool="true" weight="0.14072494" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25813448" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25813448" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,44 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="462" column="24" selection-start-line="462" selection-start-column="24" selection-end-line="462" selection-end-column="24" />
-          <folding>
-            <element signature="e#2196#4242#0" />
-            <element signature="e#4898#5153#0" />
-            <element signature="e#5157#5412#0" />
-            <element signature="e#5416#5626#0" />
-            <element signature="e#5630#6358#0" />
-            <element signature="e#6692#7103#0" />
-            <element signature="e#7108#7302#0" />
-            <element signature="e#7306#7557#0" />
-            <element signature="e#7561#7663#0" />
-            <element signature="e#7667#7786#0" />
-            <element signature="e#7790#8375#0" />
-            <element signature="e#8378#8536#0" />
-            <element signature="e#8540#8762#0" />
-            <element signature="e#8766#9364#0" />
-            <element signature="e#9367#9480#0" />
-            <element signature="e#9484#9771#0" />
-            <element signature="e#9775#10378#0" />
-            <element signature="e#10866#11154#0" />
-            <element signature="e#11682#12115#0" />
-            <element signature="e#12119#12368#0" />
-            <element signature="e#12372#12604#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="uml://JAVA/utils.HistogramUtils">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -484,12 +354,50 @@
     <entry file="file://$PROJECT_DIR$/src/application/Histogram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="462" column="24" selection-start-line="462" selection-start-column="24" selection-end-line="462" selection-end-column="24" />
+          <folding>
+            <element signature="e#2196#4242#0" />
+            <element signature="e#4898#5153#0" />
+            <element signature="e#5157#5412#0" />
+            <element signature="e#5416#5626#0" />
+            <element signature="e#5630#6358#0" />
+            <element signature="e#6692#7103#0" />
+            <element signature="e#7108#7302#0" />
+            <element signature="e#7306#7557#0" />
+            <element signature="e#7561#7663#0" />
+            <element signature="e#7667#7786#0" />
+            <element signature="e#7790#8375#0" />
+            <element signature="e#8378#8536#0" />
+            <element signature="e#8540#8762#0" />
+            <element signature="e#8766#9364#0" />
+            <element signature="e#9367#9480#0" />
+            <element signature="e#9484#9771#0" />
+            <element signature="e#9775#10378#0" />
+            <element signature="e#10866#11154#0" />
+            <element signature="e#11682#12115#0" />
+            <element signature="e#12119#12368#0" />
+            <element signature="e#12372#12604#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
