@@ -31,12 +31,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.control.TitledPane;
-import utils.Adicao;
-import utils.CorAtualUtils;
-import utils.Moldura;
-import utils.PDIClass;
-import utils.ReducaoRuido;
-import utils.Subtracao;
+import utils.*;
 
 
 public class SampleController {
@@ -255,7 +250,7 @@ public class SampleController {
 			lblB.setText("B: "+(int) (cor.getBlue()*255));
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 	
@@ -400,22 +395,6 @@ public class SampleController {
 		}
 	}
 	
-//	@FXML
-//	public void moldura() {
-//		
-////		System.out.println(array[0][2] + " X=" + array[0][0] + " Y=" + array[0][1]);
-////		System.out.println(array[1][2] + " X=" + array[1][0] + " Y=" + array[1][1]);
-//		
-//		Integer x1 = Integer.parseInt(array[0][0]);
-//		Integer y1 = Integer.parseInt(array[0][1]);
-//		
-//		Integer x2 = Integer.parseInt(array[1][0]);
-//		Integer y2 = Integer.parseInt(array[1][1]);
-//		
-//		imgResultado = Moldura.moldura(img1, x1, x2, y1, y2);
-//		
-//	}
-	
 	@FXML
 	public void moldura(){
 		
@@ -428,27 +407,6 @@ public class SampleController {
 		
 		atualizaImageResultado();
 	}
-	
-	
-//	@FXML
-//	public void onMouseEvent(MouseEvent evt) {
-//		
-//		// mouse pressionado - posicao inicial	
-//		if(evt.getEventType().getName().equals("MOUSE_PRESSED")) {
-//			array[0][0] = evt.getX()+"";
-//			array[0][1] = evt.getY()+"";
-//			array[0][2] = "MOUSE_PRESSED";
-//		}
-//		// mouse solto - posicao final	
-//		if(evt.getEventType().getName().equals("MOUSE_RELEASED")) {
-//			array[1][0] = evt.getX()+"";
-//			array[1][1] = evt.getY()+"";
-//			array[1][2] = "MOUSE_RELEASED";
-//			
-//			moldura();
-//		}
-//		
-//	}
 	
 	@FXML
 	public void mousePressed(MouseEvent evt){
@@ -487,25 +445,31 @@ public class SampleController {
 		alert.setContentText(msg);
 		alert.showAndWait();
 	}
-	
-	
+
 	public void histogram(ActionEvent event) {
 	    
 		try {
 			Stage stage = new Stage();
-		    Parent root;
-		    
-			root = FXMLLoader.load(
-			    Histogram.class.getResource("Histogram.fxml"));
+
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Histogram.fxml"));
+			Parent root = loader.load();
 		
 		    stage.setScene(new Scene(root));
-		    stage.setTitle("My modal window");
+		    stage.setTitle("Histograma");
 		    stage.initModality(Modality.WINDOW_MODAL);
 		    stage.initOwner(((Node)event.getSource()).getScene().getWindow());
-		    
 		    stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
+		    // passa dados para geração do histograma
+			Histogram controller = (Histogram)loader.getController();
+			if (img1 != null)
+				HistogramUtils.getGrafico(img1, controller.hist1);
+			if (img2 != null)
+                HistogramUtils.getGrafico(img2, controller.hist2);
+			if (imgResultado != null)
+				HistogramUtils.getGrafico(imgResultado, controller.hist3);
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
