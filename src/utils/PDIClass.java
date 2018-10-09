@@ -263,20 +263,19 @@ public class PDIClass {
                             pw.setColor(i, a, previousColor);
                         }
 
-                        // diagonal principal - image equalizada
+                        // diagonal principal - imagem equalizada
                         for(int a = i; a < width; a++){
                             Color newColor = prEqualizada.getColor(a, j);
                             pw.setColor(a, j, newColor);
                         }
 
-                        // linha separadora
+                        // linha separadora - em último para evitar ser sobrescrita
                         for(int a = i; a < width; a++){
                             Color newColor = new Color(0, 0, 0, 1);
                             pw.setColor(i, j, newColor);
                         }
+
                     }
-
-
                 }
             }
 
@@ -286,6 +285,13 @@ public class PDIClass {
             e.printStackTrace();
             return null;
         }
+    }
+
+    // return true if = opened
+    // return false if = closed
+    public static Boolean identificaSegmentos() {
+
+        return true;
     }
 
 }

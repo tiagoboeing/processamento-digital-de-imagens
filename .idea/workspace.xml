@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/application/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Histogram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/application/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/SampleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/Adicao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Adicao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/CorAtualUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/CorAtualUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/HistogramUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/HistogramUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/Inverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Inverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/Moldura.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Moldura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/PDIClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/PDIClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/ReducaoRuido.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/ReducaoRuido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/Subtracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Subtracao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/Vizinhos_backup.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Vizinhos_backup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/PDIClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDIClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -68,12 +82,12 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="3733" />
+          <entry key="java" value="3906" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3733" />
+          <entry key="JAVA" value="3906" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -85,16 +99,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="268" column="56" lean-forward="true" selection-start-line="268" selection-start-column="56" selection-end-line="268" selection-end-column="56" />
+            <state relative-caret-position="375">
+              <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
               <folding>
+                <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
                 <element signature="method#limiarizacao#0;class#PDIClass#0" />
                 <element signature="method#negativa#0;class#PDIClass#0" />
                 <element signature="method#mediaCores#0;class#PDIClass#0" />
                 <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
+                <element signature="method#equalizaHistogramaDiagonal#0;class#PDIClass#0" />
               </folding>
             </state>
           </provider>
@@ -128,20 +144,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
+            <state relative-caret-position="310">
+              <caret line="258" column="84" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
               <folding>
                 <element signature="e#2105#2275#0" />
                 <element signature="e#2554#2696#0" />
                 <element signature="e#2699#2815#0" />
                 <element signature="e#2818#4864#0" />
                 <element signature="e#4868#5516#0" />
-                <element signature="e#5520#5775#0" />
                 <element signature="e#5779#6034#0" />
-                <element signature="e#6252#6980#0" />
                 <element signature="e#6984#7305#0" />
                 <element signature="e#7309#7720#0" />
                 <element signature="e#7725#7919#0" />
@@ -189,9 +203,9 @@
         <option value="$PROJECT_DIR$/src/utils/Histogram.java" />
         <option value="$PROJECT_DIR$/src/application/Histogram.fxml" />
         <option value="$PROJECT_DIR$/src/utils/HistogramUtils.java" />
-        <option value="$PROJECT_DIR$/src/application/SampleController.java" />
         <option value="$PROJECT_DIR$/src/application/Histogram.java" />
         <option value="$PROJECT_DIR$/src/utils/PDIClass.java" />
+        <option value="$PROJECT_DIR$/src/application/SampleController.java" />
       </list>
     </option>
   </component>
@@ -218,6 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,8 +262,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,12 +328,12 @@
       <workItem from="1539044459737" duration="12532000" />
       <workItem from="1539057358532" duration="7313000" />
       <workItem from="1539092597009" duration="6328000" />
-      <workItem from="1539107897689" duration="3479000" />
+      <workItem from="1539107897689" duration="5372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41579000" />
+    <option name="totallyTimeSpent" value="43472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,7 +348,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" weight="0.15991472" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.15405117" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -353,7 +367,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.25462964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" weight="0.16151386" />
+      <window_info anchor="right" id="Structure" order="1" visible="true" weight="0.15884861" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.17217484" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -721,41 +735,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
-          <folding>
-            <element signature="e#2105#2275#0" />
-            <element signature="e#2554#2696#0" />
-            <element signature="e#2699#2815#0" />
-            <element signature="e#2818#4864#0" />
-            <element signature="e#4868#5516#0" />
-            <element signature="e#5520#5775#0" />
-            <element signature="e#5779#6034#0" />
-            <element signature="e#6252#6980#0" />
-            <element signature="e#6984#7305#0" />
-            <element signature="e#7309#7720#0" />
-            <element signature="e#7725#7919#0" />
-            <element signature="e#7923#8174#0" />
-            <element signature="e#8178#8280#0" />
-            <element signature="e#8284#8403#0" />
-            <element signature="e#8407#8992#0" />
-            <element signature="e#8995#9153#0" />
-            <element signature="e#9157#9379#0" />
-            <element signature="e#9383#9981#0" />
-            <element signature="e#9984#10097#0" />
-            <element signature="e#10101#10388#0" />
-            <element signature="e#10392#10995#0" />
-            <element signature="e#10999#11287#0" />
-            <element signature="e#11291#11724#0" />
-            <element signature="e#11728#11977#0" />
-            <element signature="e#11981#12213#0" />
-            <element signature="e#12216#13060#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -774,13 +753,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="268" column="56" lean-forward="true" selection-start-line="268" selection-start-column="56" selection-end-line="268" selection-end-column="56" />
+        <state relative-caret-position="375">
+          <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
           <folding>
+            <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
             <element signature="method#limiarizacao#0;class#PDIClass#0" />
             <element signature="method#negativa#0;class#PDIClass#0" />
             <element signature="method#mediaCores#0;class#PDIClass#0" />
             <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
+            <element signature="method#equalizaHistogramaDiagonal#0;class#PDIClass#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="258" column="84" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
+          <folding>
+            <element signature="e#2105#2275#0" />
+            <element signature="e#2554#2696#0" />
+            <element signature="e#2699#2815#0" />
+            <element signature="e#2818#4864#0" />
+            <element signature="e#4868#5516#0" />
+            <element signature="e#5779#6034#0" />
+            <element signature="e#6984#7305#0" />
+            <element signature="e#7309#7720#0" />
+            <element signature="e#7725#7919#0" />
+            <element signature="e#7923#8174#0" />
+            <element signature="e#8178#8280#0" />
+            <element signature="e#8284#8403#0" />
+            <element signature="e#8407#8992#0" />
+            <element signature="e#8995#9153#0" />
+            <element signature="e#9157#9379#0" />
+            <element signature="e#9383#9981#0" />
+            <element signature="e#9984#10097#0" />
+            <element signature="e#10101#10388#0" />
+            <element signature="e#10392#10995#0" />
+            <element signature="e#10999#11287#0" />
+            <element signature="e#11291#11724#0" />
+            <element signature="e#11728#11977#0" />
+            <element signature="e#11981#12213#0" />
+            <element signature="e#12216#13060#0" />
           </folding>
         </state>
       </provider>

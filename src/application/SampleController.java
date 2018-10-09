@@ -256,7 +256,7 @@ public class SampleController {
 		if(imgResultado != null) {
 			FileChooser fileChooser = new FileChooser();
 			fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Imagem", "*.png"));
-			fileChooser.setInitialDirectory(new File("C:/Users/tiago/eclipse-workspace/processamento-digital-de-imagens/src/imgs"));
+			fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
 			File file = fileChooser.showSaveDialog(null);
 			
 			if(file != null) {
