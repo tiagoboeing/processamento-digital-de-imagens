@@ -330,3 +330,11 @@ Ao aplicar o *for* para todos os eixos, vamos retornar uma *WritableImage* e exi
     imageViewResultado.setFitWidth(imgResultado.getWidth());
 
 [Nesta linha](https://github.com/tiagoboeing/processamento-digital-de-imagens/blob/362d9bf18e043f5c5284bea1ddb9c03bdbb73058/src/application/SampleController.java#L379) dá pra ver como foi feito para que ambas as imagens aceitem o efeito de moldura.
+
+## [Imagem em 4 frames](https://github.com/tiagoboeing/processamento-digital-de-imagens/commit/76210b62284e513208b0301bca38bdaf147ee9fd)
+
+Esta é uma técnica para separar a imagem em 4 quadros diferentes, conforme imagem abaixo:
+
+![Quadrantes](https://snag.gy/VjiOcx.jpg)
+
+
