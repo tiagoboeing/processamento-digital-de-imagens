@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/PDIClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/PDIClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/PDIClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDIClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -70,12 +68,12 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="3475" />
+          <entry key="java" value="3733" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3475" />
+          <entry key="JAVA" value="3733" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -90,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="254" column="56" lean-forward="true" selection-start-line="254" selection-start-column="56" selection-end-line="254" selection-end-column="56" />
+            <state relative-caret-position="418">
+              <caret line="268" column="56" lean-forward="true" selection-start-line="268" selection-start-column="56" selection-end-line="268" selection-end-column="56" />
               <folding>
                 <element signature="method#limiarizacao#0;class#PDIClass#0" />
                 <element signature="method#negativa#0;class#PDIClass#0" />
@@ -105,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="376">
               <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -316,12 +314,12 @@
       <workItem from="1539044459737" duration="12532000" />
       <workItem from="1539057358532" duration="7313000" />
       <workItem from="1539092597009" duration="6328000" />
-      <workItem from="1539107897689" duration="3039000" />
+      <workItem from="1539107897689" duration="3479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41139000" />
+    <option name="totallyTimeSpent" value="41579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,22 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getGrafico#0;class#HistogramUtils#0" />
-            <element signature="method#histogramaUnico#0;class#HistogramUtils#0" />
-            <element signature="method#segmentacao#0;class#HistogramUtils#0" />
-            <element signature="method#segmentacaoPorHistograma#0;class#HistogramUtils#0" />
-            <element signature="method#inicioHistograma#0;class#HistogramUtils#0" />
-            <element signature="method#fimHistograma#0;class#HistogramUtils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Histogram.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -774,10 +756,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getGrafico#0;class#HistogramUtils#0" />
+            <element signature="method#histogramaUnico#0;class#HistogramUtils#0" />
+            <element signature="method#segmentacao#0;class#HistogramUtils#0" />
+            <element signature="method#segmentacaoPorHistograma#0;class#HistogramUtils#0" />
+            <element signature="method#inicioHistograma#0;class#HistogramUtils#0" />
+            <element signature="method#fimHistograma#0;class#HistogramUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="254" column="56" lean-forward="true" selection-start-line="254" selection-start-column="56" selection-end-line="254" selection-end-column="56" />
+        <state relative-caret-position="418">
+          <caret line="268" column="56" lean-forward="true" selection-start-line="268" selection-start-column="56" selection-end-line="268" selection-end-column="56" />
           <folding>
             <element signature="method#limiarizacao#0;class#PDIClass#0" />
             <element signature="method#negativa#0;class#PDIClass#0" />

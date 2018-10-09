@@ -237,11 +237,19 @@ public class PDIClass {
             int width = (int)image.getWidth();
             int height = (int)image.getHeight();
 
+            // imagem original
             PixelReader pr = image.getPixelReader();
             WritableImage wi = new WritableImage(width, height);
             PixelWriter pw = wi.getPixelWriter();
 
-            Image ima = null;
+            // passa imagem e recebe equalizada com base em histograma
+            Image equalizada = HistogramUtils.equalizaHistograma(image);
+
+            // Buffer para ler imagem equalizada
+            PixelReader prEqualizada = equalizada.getPixelReader();
+            WritableImage wiEqualizada = new WritableImage(width, height);
+            PixelWriter pwEqualizada = wiEqualizada.getPixelWriter();
+
 
             for(int i = 0; i < width; i++) {
                 for (int j = 0; j < height; j++) {
@@ -249,16 +257,16 @@ public class PDIClass {
                     // pega diagonais
                     if(i == j){
 
-                        // diagonal secundária
-                        for(int b = i; b < width; b++){
-                            Color newColor = new Color(0, 0.5, 1, 1);
-                            pw.setColor(i, b, newColor);
+                        // diagonal secundária - imagem original
+                        for(int a = i; a < width; a++){
+                            Color previousColor = pr.getColor(i, a);
+                            pw.setColor(i, a, previousColor);
                         }
 
-                        // diagonal principal
-                        for(int b = i; b < width; b++){
-                            Color newColor = new Color(1, 1, 0, 1);
-                            pw.setColor(b, j, newColor);
+                        // diagonal principal - image equalizada
+                        for(int a = i; a < width; a++){
+                            Color newColor = prEqualizada.getColor(a, j);
+                            pw.setColor(a, j, newColor);
                         }
 
                         // linha separadora
