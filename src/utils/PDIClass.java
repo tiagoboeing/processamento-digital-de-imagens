@@ -121,11 +121,76 @@ public class PDIClass {
 		}
 	}
 
-	
 	// calcula media de uma cor
 	// return -> double	
 	public static Double mediaCores(double valorR, double valorG, double valorB) {
 		return (valorR + valorG + valorB) /3;
 	}
-	
+
+	// divide a imagem em quadrantes
+	public static Image dividirInverter(Image img) {
+
+		int largura = (int) img.getWidth();
+		int altura = (int) img.getHeight();
+		WritableImage wi = new WritableImage(largura, altura);
+		PixelReader pr = img.getPixelReader();
+		PixelWriter pw = wi.getPixelWriter();
+
+		int divAltura = Math.round(altura / 2);
+		int divLargura = Math.round(largura / 2);
+
+		// primeiro quadrante
+		for(int i = 0; i < divLargura; i++){
+			for(int j = 0; j < divAltura; j++){
+                Color c = new Color(1, 0, 1, 1);
+				Color oldCor = pr.getColor(largura - 1 - i, altura - 1 - j);
+				pw.setColor(i, j, c);
+			}
+		}
+
+        // segundo quadrante
+        for(int i = divLargura; i < largura; i++){
+            for(int j = 0; j < divAltura; j++){
+                Color c = new Color(0.2, 0, 1, 1);
+                Color oldCor = pr.getColor(i, j);
+                pw.setColor(i, j, c);
+            }
+        }
+
+        // quarto quadrante
+        for(int i = 0; i < divLargura; i++){
+            for(int j = divAltura; j < altura; j++){
+                Color c = new Color(0.5, 1, 0, 1);
+                Color oldCor = pr.getColor(largura - 1 - i, altura - 1 - j);
+                pw.setColor(i, j, c);
+            }
+        }
+
+
+        // quarto quadrante
+        for(int i = divLargura; i < largura; i++){
+            for(int j = divAltura; j < altura; j++){
+                Color c = new Color(1, 1, 0, 1);
+                Color oldCor = pr.getColor(i, j);
+                pw.setColor(i, j, c);
+            }
+        }
+
+
+//		for (int i = 0; i < divLargura; i++) {
+//			for (int j = 0; j < divAltura; j++) {
+//				Color oldCor = pr.getColor(i, j);
+//				pw.setColor(i, j, oldCor);
+//			}
+//		}
+
+//		for (int i = 0; i < divLargura; i++) {
+//			for (int j = divAltura; j < altura; j++) {
+//				Color oldCor = pr.getColor(largura - 1 - i, altura - 1 - j);
+//				pw.setColor(i, j, oldCor);
+//			}
+//		}
+		return wi;
+	}
+
 }

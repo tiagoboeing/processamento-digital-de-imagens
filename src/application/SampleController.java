@@ -85,7 +85,12 @@ public class SampleController {
 	@FXML Slider sliderRefletir;
 	@FXML RadioButton eixoX;
 	@FXML RadioButton eixoY;
-	
+
+	@FXML
+	public void dividirInverter() {
+		imgResultado = PDIClass.dividirInverter(img1);
+		atualizaImageResultado();
+	}
 	
 	@FXML
 	public void reducaoRuido() {
@@ -473,5 +478,6 @@ public class SampleController {
 			e.printStackTrace();
 		}
 	}
-	
+
+
 }

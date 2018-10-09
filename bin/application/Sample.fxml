@@ -264,6 +264,15 @@
                               </VBox>
                            </content>
                         </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Dividir/Inverter">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#dividirInverter" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #5460ea;" text="AÇÃO" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
                      </panes>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
