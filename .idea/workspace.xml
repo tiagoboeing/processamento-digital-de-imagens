@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Histogram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/SampleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Adicao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Adicao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/CorAtualUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/CorAtualUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/HistogramUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/HistogramUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Inverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Inverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Moldura.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Moldura.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/PDIClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/PDIClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/ReducaoRuido.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/ReducaoRuido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Subtracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Subtracao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/utils/Vizinhos_backup.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/Vizinhos_backup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/PDIClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDIClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/processamento_digital_de_imagens_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="258" column="84" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
+            <state relative-caret-position="332">
+              <caret line="259" column="51" lean-forward="true" selection-start-line="259" selection-start-column="51" selection-end-line="259" selection-end-column="51" />
               <folding>
                 <element signature="e#2105#2275#0" />
                 <element signature="e#2554#2696#0" />
@@ -270,7 +257,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539107848018" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -328,12 +315,12 @@
       <workItem from="1539044459737" duration="12532000" />
       <workItem from="1539057358532" duration="7313000" />
       <workItem from="1539092597009" duration="6328000" />
-      <workItem from="1539107897689" duration="5372000" />
+      <workItem from="1539107897689" duration="5496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43472000" />
+    <option name="totallyTimeSpent" value="43596000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,8 +755,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="258" column="84" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
+        <state relative-caret-position="332">
+          <caret line="259" column="51" lean-forward="true" selection-start-line="259" selection-start-column="51" selection-end-line="259" selection-end-column="51" />
           <folding>
             <element signature="e#2105#2275#0" />
             <element signature="e#2554#2696#0" />
@@ -805,10 +792,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>processamento-digital-de-imagens:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
