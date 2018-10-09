@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/SampleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Histogram.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Histogram.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Histogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/HistogramUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/HistogramUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/utils/PDIClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/PDIClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/PDIClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDIClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -41,14 +36,14 @@
     <session id="-1423867330">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,31 +51,31 @@
           <entry key="HistogramUtils" value="1" />
           <entry key="css" value="1" />
           <entry key="eml" value="1" />
-          <entry key="fxml" value="22" />
+          <entry key="fxml" value="25" />
           <entry key="iml" value="1" />
-          <entry key="java" value="78" />
+          <entry key="java" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="78" />
+          <entry key="JAVA" value="95" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="22" />
+          <entry key="XML" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="2685" />
+          <entry key="java" value="3475" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2685" />
+          <entry key="JAVA" value="3475" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -91,16 +86,30 @@
     <favorites_list name="processamento-digital-de-imagens" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="254" column="56" lean-forward="true" selection-start-line="254" selection-start-column="56" selection-end-line="254" selection-end-column="56" />
+              <folding>
+                <element signature="method#limiarizacao#0;class#PDIClass#0" />
+                <element signature="method#negativa#0;class#PDIClass#0" />
+                <element signature="method#mediaCores#0;class#PDIClass#0" />
+                <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+            <state relative-caret-position="442">
+              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getGrafico#0;class#HistogramUtils#0" />
-                <element signature="method#histograma#0;class#HistogramUtils#0" />
                 <element signature="method#histogramaUnico#0;class#HistogramUtils#0" />
                 <element signature="method#segmentacao#0;class#HistogramUtils#0" />
                 <element signature="method#segmentacaoPorHistograma#0;class#HistogramUtils#0" />
@@ -113,64 +122,46 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Histogram.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
-              <folding>
-                <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
-                <element signature="method#limiarizacao#0;class#PDIClass#0" />
-                <element signature="method#negativa#0;class#PDIClass#0" />
-                <element signature="method#mediaCores#0;class#PDIClass#0" />
-                <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="334">
+              <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
               <folding>
                 <element signature="e#2105#2275#0" />
-                <element signature="e#2278#2359#0" />
-                <element signature="e#2495#2637#0" />
-                <element signature="e#2640#2756#0" />
-                <element signature="e#2759#4805#0" />
-                <element signature="e#4809#5457#0" />
-                <element signature="e#5461#5716#0" />
-                <element signature="e#5720#5975#0" />
-                <element signature="e#5979#6189#0" />
-                <element signature="e#6193#6921#0" />
-                <element signature="e#6925#7246#0" />
-                <element signature="e#7250#7661#0" />
-                <element signature="e#7666#7860#0" />
-                <element signature="e#7864#8115#0" />
-                <element signature="e#8119#8221#0" />
-                <element signature="e#8225#8344#0" />
-                <element signature="e#8348#8933#0" />
-                <element signature="e#8936#9094#0" />
-                <element signature="e#9098#9320#0" />
-                <element signature="e#9324#9922#0" />
-                <element signature="e#9925#10038#0" />
-                <element signature="e#10042#10329#0" />
-                <element signature="e#10333#10936#0" />
-                <element signature="e#10940#11228#0" />
-                <element signature="e#11232#11665#0" />
-                <element signature="e#11669#11918#0" />
-                <element signature="e#11922#12154#0" />
-                <element signature="e#12157#13001#0" />
+                <element signature="e#2554#2696#0" />
+                <element signature="e#2699#2815#0" />
+                <element signature="e#2818#4864#0" />
+                <element signature="e#4868#5516#0" />
+                <element signature="e#5520#5775#0" />
+                <element signature="e#5779#6034#0" />
+                <element signature="e#6252#6980#0" />
+                <element signature="e#6984#7305#0" />
+                <element signature="e#7309#7720#0" />
+                <element signature="e#7725#7919#0" />
+                <element signature="e#7923#8174#0" />
+                <element signature="e#8178#8280#0" />
+                <element signature="e#8284#8403#0" />
+                <element signature="e#8407#8992#0" />
+                <element signature="e#8995#9153#0" />
+                <element signature="e#9157#9379#0" />
+                <element signature="e#9383#9981#0" />
+                <element signature="e#9984#10097#0" />
+                <element signature="e#10101#10388#0" />
+                <element signature="e#10392#10995#0" />
+                <element signature="e#10999#11287#0" />
+                <element signature="e#11291#11724#0" />
+                <element signature="e#11728#11977#0" />
+                <element signature="e#11981#12213#0" />
+                <element signature="e#12216#13060#0" />
               </folding>
             </state>
           </provider>
@@ -201,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/application/Histogram.fxml" />
         <option value="$PROJECT_DIR$/src/utils/HistogramUtils.java" />
         <option value="$PROJECT_DIR$/src/application/SampleController.java" />
-        <option value="$PROJECT_DIR$/src/utils/PDIClass.java" />
         <option value="$PROJECT_DIR$/src/application/Histogram.java" />
+        <option value="$PROJECT_DIR$/src/utils/PDIClass.java" />
       </list>
     </option>
   </component>
@@ -229,8 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,19 +248,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539064195354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539107848018" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -323,12 +314,14 @@
       <workItem from="1538966439238" duration="118000" />
       <workItem from="1539003977693" duration="993000" />
       <workItem from="1539044459737" duration="12532000" />
-      <workItem from="1539057358532" duration="6816000" />
+      <workItem from="1539057358532" duration="7313000" />
+      <workItem from="1539092597009" duration="6328000" />
+      <workItem from="1539107897689" duration="3039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31275000" />
+    <option name="totallyTimeSpent" value="41139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,7 +336,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.15831557" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" weight="0.15991472" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -351,7 +344,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.501462" side_tool="true" weight="0.14072494" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22559653" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22342733" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28958786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -360,10 +353,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.22668113" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.2548807" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.25462964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" visible="true" weight="0.16151386" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.18336888" />
+      <window_info anchor="right" id="Structure" order="1" weight="0.16151386" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.17217484" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -374,7 +367,7 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.16791044" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.15833333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" weight="0.15991472" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -382,7 +375,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.501462" side_tool="true" weight="0.14072494" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.22559653" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22407408" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28958786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,10 +384,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.22668113" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.2548807" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.25462964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" weight="0.16197917" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.18336888" />
+      <window_info anchor="right" id="Structure" order="1" weight="0.16151386" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.17217484" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -483,13 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="181" selection-start-line="181" selection-end-line="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/scene/image/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="1195" selection-start-line="1195" selection-end-line="1195" />
         </state>
       </provider>
     </entry>
@@ -715,29 +701,32 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/scene/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="1199" selection-start-line="1199" selection-end-line="1199" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+        <state relative-caret-position="442">
+          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getGrafico#0;class#HistogramUtils#0" />
-            <element signature="method#histograma#0;class#HistogramUtils#0" />
             <element signature="method#histogramaUnico#0;class#HistogramUtils#0" />
             <element signature="method#segmentacao#0;class#HistogramUtils#0" />
             <element signature="method#segmentacaoPorHistograma#0;class#HistogramUtils#0" />
             <element signature="method#inicioHistograma#0;class#HistogramUtils#0" />
             <element signature="method#fimHistograma#0;class#HistogramUtils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Histogram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,53 +739,50 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
+    <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+        <state relative-caret-position="334">
+          <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
           <folding>
-            <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
-            <element signature="method#limiarizacao#0;class#PDIClass#0" />
-            <element signature="method#negativa#0;class#PDIClass#0" />
-            <element signature="method#mediaCores#0;class#PDIClass#0" />
-            <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
+            <element signature="e#2105#2275#0" />
+            <element signature="e#2554#2696#0" />
+            <element signature="e#2699#2815#0" />
+            <element signature="e#2818#4864#0" />
+            <element signature="e#4868#5516#0" />
+            <element signature="e#5520#5775#0" />
+            <element signature="e#5779#6034#0" />
+            <element signature="e#6252#6980#0" />
+            <element signature="e#6984#7305#0" />
+            <element signature="e#7309#7720#0" />
+            <element signature="e#7725#7919#0" />
+            <element signature="e#7923#8174#0" />
+            <element signature="e#8178#8280#0" />
+            <element signature="e#8284#8403#0" />
+            <element signature="e#8407#8992#0" />
+            <element signature="e#8995#9153#0" />
+            <element signature="e#9157#9379#0" />
+            <element signature="e#9383#9981#0" />
+            <element signature="e#9984#10097#0" />
+            <element signature="e#10101#10388#0" />
+            <element signature="e#10392#10995#0" />
+            <element signature="e#10999#11287#0" />
+            <element signature="e#11291#11724#0" />
+            <element signature="e#11728#11977#0" />
+            <element signature="e#11981#12213#0" />
+            <element signature="e#12216#13060#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="222">
+          <caret line="254" column="56" lean-forward="true" selection-start-line="254" selection-start-column="56" selection-end-line="254" selection-end-column="56" />
           <folding>
-            <element signature="e#2105#2275#0" />
-            <element signature="e#2278#2359#0" />
-            <element signature="e#2495#2637#0" />
-            <element signature="e#2640#2756#0" />
-            <element signature="e#2759#4805#0" />
-            <element signature="e#4809#5457#0" />
-            <element signature="e#5461#5716#0" />
-            <element signature="e#5720#5975#0" />
-            <element signature="e#5979#6189#0" />
-            <element signature="e#6193#6921#0" />
-            <element signature="e#6925#7246#0" />
-            <element signature="e#7250#7661#0" />
-            <element signature="e#7666#7860#0" />
-            <element signature="e#7864#8115#0" />
-            <element signature="e#8119#8221#0" />
-            <element signature="e#8225#8344#0" />
-            <element signature="e#8348#8933#0" />
-            <element signature="e#8936#9094#0" />
-            <element signature="e#9098#9320#0" />
-            <element signature="e#9324#9922#0" />
-            <element signature="e#9925#10038#0" />
-            <element signature="e#10042#10329#0" />
-            <element signature="e#10333#10936#0" />
-            <element signature="e#10940#11228#0" />
-            <element signature="e#11232#11665#0" />
-            <element signature="e#11669#11918#0" />
-            <element signature="e#11922#12154#0" />
-            <element signature="e#12157#13001#0" />
+            <element signature="method#limiarizacao#0;class#PDIClass#0" />
+            <element signature="method#negativa#0;class#PDIClass#0" />
+            <element signature="method#mediaCores#0;class#PDIClass#0" />
+            <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
           </folding>
         </state>
       </provider>

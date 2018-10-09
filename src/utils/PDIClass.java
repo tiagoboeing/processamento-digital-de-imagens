@@ -241,15 +241,38 @@ public class PDIClass {
             WritableImage wi = new WritableImage(width, height);
             PixelWriter pw = wi.getPixelWriter();
 
-            int vetor[][] = new int[width][height];
+            Image ima = null;
 
             for(int i = 0; i < width; i++) {
                 for (int j = 0; j < height; j++) {
-                    vetor[i][j] = (int)pr.getColor(i, j).getOpacity();
+
+                    // pega diagonais
+                    if(i == j){
+
+                        // diagonal secundária
+                        for(int b = i; b < width; b++){
+                            Color newColor = new Color(0, 0.5, 1, 1);
+                            pw.setColor(i, b, newColor);
+                        }
+
+                        // diagonal principal
+                        for(int b = i; b < width; b++){
+                            Color newColor = new Color(1, 1, 0, 1);
+                            pw.setColor(b, j, newColor);
+                        }
+
+                        // linha separadora
+                        for(int a = i; a < width; a++){
+                            Color newColor = new Color(0, 0, 0, 1);
+                            pw.setColor(i, j, newColor);
+                        }
+                    }
+
+
                 }
             }
 
-            return image;
+            return wi;
 
         }  catch (Exception e) {
             e.printStackTrace();
