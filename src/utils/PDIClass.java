@@ -289,8 +289,8 @@ public class PDIClass {
 
     // return true if = opened
     // return false if = closed
-    public static Boolean identificaSegmentos() {
-
+    public static Boolean identificaSegmentos(Image image) {
+        
         return true;
     }
 

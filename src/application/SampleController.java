@@ -439,6 +439,15 @@ public class SampleController {
 		
 		atualizaImageResultado();
 	}
+
+	@FXML
+	public void identificaSegmentos(){
+		if(PDIClass.identificaSegmentos(img1)){
+			exibeMsg("Não contínua", "FORMA ABERTA!", "Esta forma está ABERTA!", AlertType.ERROR);
+		} else {
+			exibeMsg("Contínua", "FORMA FECHADA!", "Esta forma está FECHADA!", AlertType.INFORMATION);
+		}
+	}
 	
 	@FXML
 	public void mousePressed(MouseEvent evt){
@@ -505,6 +514,5 @@ public class SampleController {
 			e.printStackTrace();
 		}
 	}
-
 
 }

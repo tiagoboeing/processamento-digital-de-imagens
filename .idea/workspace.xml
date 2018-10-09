@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="processamento-digital-de-imagens:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/processamento_digital_de_imagens_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/PDIClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDIClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +56,7 @@
           <entry key="HistogramUtils" value="1" />
           <entry key="css" value="1" />
           <entry key="eml" value="1" />
-          <entry key="fxml" value="25" />
+          <entry key="fxml" value="26" />
           <entry key="iml" value="1" />
           <entry key="java" value="95" />
         </counts>
@@ -62,19 +68,19 @@
           <entry key="JAVA" value="95" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="25" />
+          <entry key="XML" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="3906" />
+          <entry key="java" value="4199" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3906" />
+          <entry key="JAVA" value="4199" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -86,11 +92,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+            <state relative-caret-position="468">
+              <caret line="292" column="8" selection-start-line="292" selection-start-column="8" selection-end-line="292" selection-end-column="8" />
               <folding>
                 <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
                 <element signature="method#limiarizacao#0;class#PDIClass#0" />
@@ -104,45 +110,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getGrafico#0;class#HistogramUtils#0" />
-                <element signature="method#histogramaUnico#0;class#HistogramUtils#0" />
-                <element signature="method#segmentacao#0;class#HistogramUtils#0" />
-                <element signature="method#segmentacaoPorHistograma#0;class#HistogramUtils#0" />
-                <element signature="method#inicioHistograma#0;class#HistogramUtils#0" />
-                <element signature="method#fimHistograma#0;class#HistogramUtils#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Histogram.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="259" column="51" lean-forward="true" selection-start-line="259" selection-start-column="51" selection-end-line="259" selection-end-column="51" />
+            <state relative-caret-position="258">
+              <caret line="444" column="11" lean-forward="true" selection-start-line="444" selection-start-column="11" selection-end-line="444" selection-end-column="11" />
               <folding>
                 <element signature="e#2105#2275#0" />
+                <element signature="e#2278#2418#0" />
+                <element signature="e#2421#2551#0" />
                 <element signature="e#2554#2696#0" />
                 <element signature="e#2699#2815#0" />
                 <element signature="e#2818#4864#0" />
                 <element signature="e#4868#5516#0" />
+                <element signature="e#5520#5775#0" />
                 <element signature="e#5779#6034#0" />
+                <element signature="e#6038#6248#0" />
+                <element signature="e#6252#6980#0" />
                 <element signature="e#6984#7305#0" />
                 <element signature="e#7309#7720#0" />
                 <element signature="e#7725#7919#0" />
@@ -162,6 +145,26 @@
                 <element signature="e#11981#12213#0" />
                 <element signature="e#12216#13060#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Histogram.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -191,8 +194,8 @@
         <option value="$PROJECT_DIR$/src/application/Histogram.fxml" />
         <option value="$PROJECT_DIR$/src/utils/HistogramUtils.java" />
         <option value="$PROJECT_DIR$/src/application/Histogram.java" />
-        <option value="$PROJECT_DIR$/src/utils/PDIClass.java" />
         <option value="$PROJECT_DIR$/src/application/SampleController.java" />
+        <option value="$PROJECT_DIR$/src/utils/PDIClass.java" />
       </list>
     </option>
   </component>
@@ -231,6 +234,24 @@
             <path>
               <item name="processamento-digital-de-imagens" type="b2602c69:ProjectViewProjectNode" />
               <item name="processamento-digital-de-imagens" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="processamento-digital-de-imagens" type="b2602c69:ProjectViewProjectNode" />
+              <item name="processamento-digital-de-imagens" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="processamento-digital-de-imagens" type="b2602c69:ProjectViewProjectNode" />
+              <item name="processamento-digital-de-imagens" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="processamento_digital_de_imagens_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="processamento-digital-de-imagens" type="b2602c69:ProjectViewProjectNode" />
+              <item name="processamento-digital-de-imagens" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539107848018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539118301623" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -315,12 +336,12 @@
       <workItem from="1539044459737" duration="12532000" />
       <workItem from="1539057358532" duration="7313000" />
       <workItem from="1539092597009" duration="6328000" />
-      <workItem from="1539107897689" duration="5496000" />
+      <workItem from="1539107897689" duration="7010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43596000" />
+    <option name="totallyTimeSpent" value="45110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,214 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="n#BorderPane#0;n#!!top" />
-            <element signature="n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#1;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#2;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#2;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#2;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#2;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Button#1;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox.margin#0;n#Button#1;n#children#0;n#VBox#0;n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#0;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#1;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#1;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#AnchorPane#0;n#content#0;n#TitledPane#1;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#AnchorPane#0;n#content#0;n#TitledPane#1;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#2;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#2;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#2;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#2;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#RadioButton#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#RadioButton#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#toggleGroup#0;n#RadioButton#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#RadioButton#1;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#RadioButton#1;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#RadioButton#2;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#RadioButton#2;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#3;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#4;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#5;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#6;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#6;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#6;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#6;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#TitledPane#7;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#8;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#8;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#8;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#8;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#9;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#9;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#9;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#9;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Button#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#9;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox.margin#0;n#Button#1;n#children#0;n#VBox#0;n#content#0;n#TitledPane#9;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#10;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#10;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#10;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#10;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#TitledPane#11;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#TitledPane#11;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#TitledPane#11;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#TitledPane#11;n#panes#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#cursor#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox.margin#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#padding#0;n#Accordion#0;n#children#0;n#HBox#0;n#left#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#BorderPane.margin#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#BorderPane.margin#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#1;n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#1;n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#2;n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#2;n#children#0;n#HBox#1;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#ImageView#0;n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#cursor#0;n#ImageView#0;n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#ImageView#1;n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#cursor#0;n#ImageView#1;n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#HBox#2;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Button#0;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Button#0;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Button#1;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Button#1;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Button#2;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#graphic#0;n#Button#2;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#ImageView#0;n#graphic#0;n#Button#2;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#image#0;n#ImageView#0;n#graphic#0;n#Button#2;n#children#0;n#HBox#3;n#children#0;n#VBox#0;n#content#0;n#ScrollPane#0;n#children#0;n#HBox#0;n#center#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#HBox#0;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#HBox#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#HBox#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#HBox#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#HBox#1;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#2;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#2;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#VBox#0;n#children#0;n#HBox#2;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#VBox#0;n#children#0;n#HBox#2;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#VBox#0;n#children#0;n#HBox#2;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#VBox#0;n#children#0;n#HBox#2;n#children#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#padding#0;n#HBox#0;n#children#0;n#VBox#0;n#top#0;n#BorderPane#0;n#center#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#BorderPane.margin#0;n#BorderPane#0;n#left#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#top#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#HBox#0;n#top#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#children#0;n#HBox#0;n#top#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#Label#0;n#children#0;n#HBox#0;n#top#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#font#0;n#Label#0;n#children#0;n#HBox#0;n#top#0;n#BorderPane#0;n#!!top" />
-            <element signature="n#padding#0;n#HBox#0;n#top#0;n#BorderPane#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Histogram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -714,18 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Histogram.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/HistogramUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getGrafico#0;class#HistogramUtils#0" />
@@ -738,32 +543,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Histogram.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
-          <folding>
-            <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
-            <element signature="method#limiarizacao#0;class#PDIClass#0" />
-            <element signature="method#negativa#0;class#PDIClass#0" />
-            <element signature="method#mediaCores#0;class#PDIClass#0" />
-            <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
-            <element signature="method#equalizaHistogramaDiagonal#0;class#PDIClass#0" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="259" column="51" lean-forward="true" selection-start-line="259" selection-start-column="51" selection-end-line="259" selection-end-column="51" />
+        <state relative-caret-position="258">
+          <caret line="444" column="11" lean-forward="true" selection-start-line="444" selection-start-column="11" selection-end-line="444" selection-end-column="11" />
           <folding>
             <element signature="e#2105#2275#0" />
+            <element signature="e#2278#2418#0" />
+            <element signature="e#2421#2551#0" />
             <element signature="e#2554#2696#0" />
             <element signature="e#2699#2815#0" />
             <element signature="e#2818#4864#0" />
             <element signature="e#4868#5516#0" />
+            <element signature="e#5520#5775#0" />
             <element signature="e#5779#6034#0" />
+            <element signature="e#6038#6248#0" />
+            <element signature="e#6252#6980#0" />
             <element signature="e#6984#7305#0" />
             <element signature="e#7309#7720#0" />
             <element signature="e#7725#7919#0" />
@@ -782,6 +593,21 @@
             <element signature="e#11728#11977#0" />
             <element signature="e#11981#12213#0" />
             <element signature="e#12216#13060#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="292" column="8" selection-start-line="292" selection-start-column="8" selection-end-line="292" selection-end-column="8" />
+          <folding>
+            <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
+            <element signature="method#limiarizacao#0;class#PDIClass#0" />
+            <element signature="method#negativa#0;class#PDIClass#0" />
+            <element signature="method#mediaCores#0;class#PDIClass#0" />
+            <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
+            <element signature="method#equalizaHistogramaDiagonal#0;class#PDIClass#0" />
           </folding>
         </state>
       </provider>

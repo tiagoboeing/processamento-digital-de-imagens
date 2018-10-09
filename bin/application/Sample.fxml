@@ -309,6 +309,15 @@
                               </VBox>
                            </content>
                         </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Identificar segmentos em desenho">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#identificaSegmentos" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #990000;" text="IDENTIFICAR" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
                      </panes>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
