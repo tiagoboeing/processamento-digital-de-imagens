@@ -1,7 +1,6 @@
 package application;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
@@ -86,9 +85,13 @@ public class SampleController {
 	@FXML RadioButton eixoX;
 	@FXML RadioButton eixoY;
 
+//	quadrantes
+	@FXML Slider sliderQuad1;
+	@FXML Slider sliderQuad2;
+
 	@FXML
-	public void dividirInverter() {
-		imgResultado = PDIClass.dividirInverter(img1);
+	public void dividirQuadrantes() {
+		imgResultado = PDIClass.dividirQuadrantes(img1, sliderQuad1.getValue(), sliderQuad2.getValue());
 		atualizaImageResultado();
 	}
 	

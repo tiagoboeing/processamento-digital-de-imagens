@@ -268,7 +268,11 @@
                            <content>
                               <VBox prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#dividirInverter" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #5460ea;" text="AÇÃO" textFill="WHITE" />
+                                    <Label text="Inverter primeiro" />
+                                    <Slider fx:id="sliderQuad1" blockIncrement="1.0" majorTickUnit="1.0" max="4.0" min="1.0" minorTickCount="0" prefHeight="111.0" prefWidth="286.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                                    <Label text="Inverter também" />
+                                    <Slider fx:id="sliderQuad2" blockIncrement="1.0" majorTickUnit="1.0" max="4.0" min="1.0" minorTickCount="0" prefHeight="82.0" prefWidth="286.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#dividirQuadrantes" prefHeight="33.0" prefWidth="286.0" style="-fx-background-color: #5460ea;" text="Inverter quadrantes" textFill="WHITE" />
                                  </children>
                               </VBox>
                            </content>
