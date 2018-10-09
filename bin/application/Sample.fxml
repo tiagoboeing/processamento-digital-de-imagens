@@ -277,6 +277,38 @@
                               </VBox>
                            </content>
                         </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Segmentação">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#segmentacao" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #5460ea;" text="SEGMENTAÇÃO" textFill="WHITE" />
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#segmentacaoPorHistograma" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #af52c4;" text="SEGMENTAÇÃO POR HISTOGRAMA" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Equaliza Histograma">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#equalizaHistograma" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #5460ea;" text="EQUALIZAR" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" text="Equaliza Histograma diagonal principal">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#equalizaHistogramaDiagonal" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #5460ea;" text="EQUALIZAR" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
                      </panes>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />

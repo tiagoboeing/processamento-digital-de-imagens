@@ -94,7 +94,31 @@ public class SampleController {
 		imgResultado = PDIClass.dividirQuadrantes(img1, sliderQuad1.getValue(), sliderQuad2.getValue());
 		atualizaImageResultado();
 	}
-	
+
+	@FXML
+	public void equalizaHistogramaDiagonal() {
+		imgResultado = PDIClass.equalizaHistogramaDiagonal(img1);
+		atualizaImageResultado();
+	}
+
+	@FXML
+	public void equalizaHistograma() {
+		imgResultado = HistogramUtils.equalizaHistograma(img1);
+		atualizaImageResultado();
+	}
+
+	@FXML
+	public void segmentacaoPorHistograma() {
+		imgResultado = HistogramUtils.segmentacaoPorHistograma(img1);
+		atualizaImageResultado();
+	}
+
+	@FXML
+	public void segmentacao() {
+		imgResultado = HistogramUtils.segmentacao(img1);
+		atualizaImageResultado();
+	}
+
 	@FXML
 	public void reducaoRuido() {
 		
