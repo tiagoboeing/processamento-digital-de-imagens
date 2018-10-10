@@ -7,6 +7,7 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.paint.Color;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
+import java.util.ArrayList;
 
 public class Prova1 {
 
@@ -92,41 +93,56 @@ public class Prova1 {
 
     public static String identificaFormas(Image image){
 
-        int width = (int) image.getWidth();
-        int height = (int) image.getHeight();
-
-        WritableImage wi = new WritableImage(width, height);
-        PixelReader pr = image.getPixelReader();
-        PixelWriter pw = wi.getPixelWriter();
-
         String formaFinal = "";
+        int x = 0, y = 0;
 
-        for (int altura = 0; altura < width; altura++) {
-            for (int largura = 0; largura < height; largura++) {
+        int width = (int)image.getWidth();
+        int height = (int)image.getHeight();
+        PixelReader pr = image.getPixelReader();
 
-                // procura primeiro pixel preto que encontrar
-                Color cor = pr.getColor(largura, altura);
-                if(cor.getRed() == 0 && cor.getGreen() == 0 && cor.getBlue() == 0 && cor.getOpacity() == 1){
+        // varremos altura x largura
+        for (int altura = 0; altura < height; altura++) {
+            for (int largura = 0; largura < width; largura++) {
 
-                    // procura cor do vizinho na vertical
-                    Color abaixo = pr.getColor(largura, altura+1);
-                    Color direita = pr.getColor(largura+1, altura);
-
-                    if((abaixo.getRed() == 0 && abaixo.getGreen() == 0 && abaixo.getBlue() == 0) && (direita.getRed() == 0 && direita.getGreen() == 0 && direita.getBlue() == 0)){
-                        System.out.println("Quadrado");
-                        formaFinal = "Quadrado";
-                    } else {
-                        System.out.println("Circulo");
-                        formaFinal = "Circulo";
-                    }
-
+                // descobre locais com pixel preto
+                if (isPreto(pr.getColor(largura, altura))) {
+                    x = largura;
+                    y = altura;
                 }
 
             }
         }
 
-        return formaFinal;
+        try {
+            if(vizinhoIsPreto(image, x, (y-1)) && vizinhoIsPreto(image, (x-1), y)){
+                formaFinal = "QUADRADO";
+            } else {
+                formaFinal = "CIRCULO";
+            }
+        } catch (Exception e){
+            formaFinal = "Nenhum dos dois!";
+        }
 
+        return formaFinal;
     }
+
+    // recebe uma cor e informa se é preta ou não
+    public static boolean isPreto(Color cor){
+        if((cor.getRed() == 0 && cor.getGreen() == 0 && cor.getBlue() == 0) && cor.getOpacity() == 1){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // recebe uma imagem, posiçãoX, PosiçãoY
+    // retorna => cor é preta (true ou false)
+    public static boolean vizinhoIsPreto(Image image, int posX, int posY){
+        Color corPixel = image.getPixelReader().getColor(posX, posY);
+
+        // perguntamos ao método se a cor é preta
+        return isPreto(corPixel);
+    }
+
 
 }

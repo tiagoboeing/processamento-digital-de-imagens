@@ -535,15 +535,11 @@ public class SampleController {
 
     @FXML
     public void prova1IdentificaFormas() {
-//        if(Prova1.identificaFormas(img1).equalsIgnoreCase("QUADRADO")){
-//            exibeMsg("Forma identificada é:", "QUADRADO", "Esta forma é um QUADRADO!", AlertType.INFORMATION);
-//        } else if(Prova1.identificaFormas(img1).equalsIgnoreCase("CIRCULO")){
-//            exibeMsg("Forma identificada é:", "CÍRCULO", "Esta forma é um CÍRCULO!", AlertType.INFORMATION);
-//        } else {
-//            exibeMsg("Forma não identificada", "Forma não identificada", "Não foi possível reconhecer!", AlertType.ERROR);
-//        }
-
-        exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.WARNING);
+        if(Prova1.identificaFormas(img1).equalsIgnoreCase("Nenhum dos dois!")){
+            exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.ERROR);
+        } else {
+            exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.WARNING);
+        }
     }
 
 }
