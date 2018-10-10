@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/imgs/traçado.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/traçado.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Prova1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Prova1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/processamento_digital_de_imagens_jar/processamento-digital-de-imagens.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/processamento_digital_de_imagens_jar/processamento-digital-de-imagens.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/Prova1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="414">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="method#moldura#0;class#Prova1#0" />
                 <element signature="method#divideInverteTonsCinza#0;class#Prova1#0" />
@@ -118,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="528" lean-forward="true" selection-start-line="528" selection-end-line="528" />
+            <state relative-caret-position="539">
+              <caret line="535" column="9" lean-forward="true" selection-start-line="535" selection-start-column="9" selection-end-line="535" selection-end-column="9" />
               <folding>
                 <element signature="e#2393#2581#0" />
                 <element signature="e#2587#2745#0" />
@@ -156,6 +154,7 @@
                 <element signature="e#14659#15649#0" />
                 <element signature="e#15655#15954#0" />
                 <element signature="e#15960#16114#0" />
+                <element signature="e#16120#16410#0" />
               </folding>
             </state>
           </provider>
@@ -260,7 +259,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539155576039" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539156239896" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -322,12 +321,12 @@
       <workItem from="1539057358532" duration="7313000" />
       <workItem from="1539092597009" duration="6328000" />
       <workItem from="1539107897689" duration="7010000" />
-      <workItem from="1539146380880" duration="8579000" />
+      <workItem from="1539146380880" duration="9242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62780000" />
+    <option name="totallyTimeSpent" value="63443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,7 +341,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.14232409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.14232409" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -350,7 +349,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.501462" side_tool="true" weight="0.14072494" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22017354" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22017354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3253796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,7 +361,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.2527115" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Structure" order="1" visible="true" weight="0.15671642" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.17185822" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.1716418" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -575,23 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Prova1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="method#moldura#0;class#Prova1#0" />
-            <element signature="method#divideInverteTonsCinza#0;class#Prova1#0" />
-            <element signature="method#isPreto#0;class#Prova1#0" />
-            <element signature="method#vizinhoIsPreto#0;class#Prova1#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="528" lean-forward="true" selection-start-line="528" selection-end-line="528" />
+        <state relative-caret-position="539">
+          <caret line="535" column="9" lean-forward="true" selection-start-line="535" selection-start-column="9" selection-end-line="535" selection-end-column="9" />
           <folding>
             <element signature="e#2393#2581#0" />
             <element signature="e#2587#2745#0" />
@@ -625,6 +611,20 @@
             <element signature="e#14659#15649#0" />
             <element signature="e#15655#15954#0" />
             <element signature="e#15960#16114#0" />
+            <element signature="e#16120#16410#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Prova1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="method#moldura#0;class#Prova1#0" />
+            <element signature="method#divideInverteTonsCinza#0;class#Prova1#0" />
+            <element signature="method#isPreto#0;class#Prova1#0" />
+            <element signature="method#vizinhoIsPreto#0;class#Prova1#0" />
           </folding>
         </state>
       </provider>
