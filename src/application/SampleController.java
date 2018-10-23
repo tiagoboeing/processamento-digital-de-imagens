@@ -1,6 +1,7 @@
 package application;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
@@ -12,13 +13,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Slider;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.PixelWriter;
@@ -29,9 +25,8 @@ import javafx.scene.transform.Rotate;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.scene.control.TitledPane;
+import org.opencv.core.Core;
 import utils.*;
-
 
 public class SampleController {
 
@@ -94,6 +89,38 @@ public class SampleController {
     @FXML TextField txtMolduraG;
     @FXML TextField txtMolduraB;
     @FXML TextField txtMolduraPixels;
+
+    // classificadores do opencv disponíveis
+    // cole o arquivo .xml na pasta ./src/classificadores
+    @FXML ComboBox classificadores;
+    public void initialize() {
+        classificadores.getItems().removeAll(classificadores.getItems());
+        classificadores.getItems().addAll(
+                "detect_faces.xml",
+                "detect_full_body.xml",
+                "frontalcatface.xml",
+                "eye.xml",
+                "eye_tree_eyeglasses.xml",
+                "haarcascade_frontalcatface_extended.xml",
+                "haarcascade_frontalface_alt.xml",
+                "haarcascade_frontalface_alt_tree.xml",
+                "haarcascade_frontalface_alt2.xml",
+                "haarcascade_frontalface_default.xml",
+                "haarcascade_lefteye_2splits.xml",
+                "haarcascade_licence_plate_rus_16stages.xml",
+                "haarcascade_lowerbody.xml",
+                "haarcascade_profileface.xml",
+                "haarcascade_righteye_2splits.xml",
+                "haarcascade_russian_plate_number.xml",
+                "haarcascade_smile.xml",
+                "haarcascade_upperbody.xml"
+        );
+        classificadores.getSelectionModel().select("detect_faces.xml");
+    }
+
+    // CARREGA BIBLIOTECAS DO OPENCV
+    static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
+
 
     @FXML
     public void dividirQuadrantes() {
@@ -485,6 +512,38 @@ public class SampleController {
         }
     }
 
+    @FXML
+    public void prova1Moldura() {
+        imgResultado = Prova1.moldura(img1, Double.parseDouble(txtMolduraR.getText()), Double.parseDouble(txtMolduraG.getText()), Double.parseDouble(txtMolduraB.getText()), Integer.parseInt(txtMolduraPixels.getText()));
+        atualizaImageResultado();
+    }
+
+    @FXML
+    public void prova1DivideInverteTonsCinza() {
+        imgResultado = Prova1.divideInverteTonsCinza(img1);
+        atualizaImageResultado();
+    }
+
+    @FXML
+    public void prova1IdentificaFormas() {
+        if(Prova1.identificaFormas(img1).equalsIgnoreCase("Nenhum dos dois!")){
+            exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.ERROR);
+        } else {
+            exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.WARNING);
+        }
+    }
+
+    @FXML
+    public void detectPatterns() throws IOException {
+        if(criaCacheImagem(img1)){
+            imgResultado = OpenCV.detectPatterns(new File("./src/imgs/temp/temp.png"), classificadores.getSelectionModel().getSelectedItem().toString());
+            atualizaImageResultado();
+            limpaCacheImagem();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
     private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {
         Alert alert = new Alert(tipo);
         alert.setTitle(titulo);
@@ -521,25 +580,25 @@ public class SampleController {
         }
     }
 
-    @FXML
-    public void prova1Moldura() {
-        imgResultado = Prova1.moldura(img1, Double.parseDouble(txtMolduraR.getText()), Double.parseDouble(txtMolduraG.getText()), Double.parseDouble(txtMolduraB.getText()), Integer.parseInt(txtMolduraPixels.getText()));
-        atualizaImageResultado();
-    }
+    // copia uma imagem para pasta temporária
+    public Boolean criaCacheImagem(Image img) {
+        try {
+            File temp = new File("./src/imgs/temp/temp.png");
+            BufferedImage bImg = SwingFXUtils.fromFXImage(img, null);
 
-    @FXML
-    public void prova1DivideInverteTonsCinza() {
-        imgResultado = Prova1.divideInverteTonsCinza(img1);
-        atualizaImageResultado();
-    }
-
-    @FXML
-    public void prova1IdentificaFormas() {
-        if(Prova1.identificaFormas(img1).equalsIgnoreCase("Nenhum dos dois!")){
-            exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.ERROR);
-        } else {
-            exibeMsg("", Prova1.identificaFormas(img1), Prova1.identificaFormas(img1), AlertType.WARNING);
+            if(ImageIO.write(bImg, "png", temp)){
+                return true;
+            } else {
+                return false;
+            }
+        } catch (Exception e){
+            System.out.println("Algum erro ao criar cache da imagem");
         }
+        return false;
     }
 
+    public void limpaCacheImagem(){
+        File temp = new File("./src/imgs/temp/temp.png");
+        temp.delete();
+    }
 }
