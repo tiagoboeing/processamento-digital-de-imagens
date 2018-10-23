@@ -3,6 +3,8 @@
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
 	<lib name="opencv-400.jar" scope="COMPILE">
-		<srcroot url="jar://C:/Program Files/opencv/build/java/opencv-400.jar!/"/>
+		<srcroot url="jar://$MODULE_DIR$/lib/opencv-400.jar!/"/>
+		<relative-module-src project-related="jar://$PROJECT_DIR$/lib/opencv-400.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/opencv-400.jar!/"/>
 	</lib>
 </component>

@@ -113,7 +113,8 @@ public class SampleController {
                 "haarcascade_righteye_2splits.xml",
                 "haarcascade_russian_plate_number.xml",
                 "haarcascade_smile.xml",
-                "haarcascade_upperbody.xml"
+                "haarcascade_upperbody.xml",
+                "hogcascade_pedestrians.xml"
         );
         classificadores.getSelectionModel().select("detect_faces.xml");
     }
@@ -238,7 +239,7 @@ public class SampleController {
                 "*.bmp", "*.BMP"
         ));
 
-        fileChooser.setInitialDirectory(new File("C:/Users/tiago/eclipse-workspace/processamento-digital-de-imagens/src/imgs"));
+        fileChooser.setInitialDirectory(new File("./src/imgs"));
         File imgSelect = fileChooser.showOpenDialog(null);
 
         try {
@@ -544,6 +545,19 @@ public class SampleController {
         }
     }
 
+    @FXML
+    public void openCVTonsDeCinza(){
+        if(criaCacheImagem(img1)) {
+            file = OpenCV.tonsDeCinza(new File("./src/imgs/temp/temp.png"));
+            imgResultado = new Image(file.toURI().toString());
+            atualizaImageResultado();
+
+            limpaPastaCache();
+        } else {
+            limpaPastaCache();
+        }
+    }
+
     private void exibeMsg(String titulo, String cabecalho, String msg, AlertType tipo) {
         Alert alert = new Alert(tipo);
         alert.setTitle(titulo);
@@ -600,5 +614,15 @@ public class SampleController {
     public void limpaCacheImagem(){
         File temp = new File("./src/imgs/temp/temp.png");
         temp.delete();
+    }
+
+    public void limpaPastaCache(){
+        File folder = new File("./src/imgs/temp");
+        if (folder.isDirectory()) {
+            File[] sun = folder.listFiles();
+            for (File toDelete : sun) {
+                toDelete.delete();
+            }
+        }
     }
 }

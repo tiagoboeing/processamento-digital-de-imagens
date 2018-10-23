@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="processamento-digital-de-imagens:jar" />
+      <artifact name="processamento-digital-de-imagens" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="" />
+    <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processamento_digital_de_imagens_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/application/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/SampleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/imgs/rostos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/imgs/teste-ruido.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/imgs/testeRuido.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/processamento_digital_de_imagens_jar/processamento-digital-de-imagens.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processamento-digital-de-imagens.eml" beforeDir="false" afterPath="$PROJECT_DIR$/processamento-digital-de-imagens.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/OpenCV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/OpenCV.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,31 +67,31 @@
           <entry key="HistogramUtils" value="1" />
           <entry key="css" value="1" />
           <entry key="eml" value="1" />
-          <entry key="fxml" value="33" />
+          <entry key="fxml" value="34" />
           <entry key="iml" value="1" />
-          <entry key="java" value="152" />
+          <entry key="java" value="159" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="152" />
+          <entry key="JAVA" value="159" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="33" />
+          <entry key="XML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="11800" />
+          <entry key="java" value="12619" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11800" />
+          <entry key="JAVA" value="12619" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -90,22 +103,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+            <state relative-caret-position="224">
+              <caret line="550" column="30" selection-start-line="550" selection-start-column="30" selection-end-line="550" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2356#2608#0" />
+                <element signature="initializer##0;class#SampleController#0" />
                 <element signature="e#2577#2765#0" />
                 <element signature="e#2771#2929#0" />
                 <element signature="e#2935#3083#0" />
                 <element signature="e#3089#3249#0" />
                 <element signature="e#3255#3389#0" />
                 <element signature="e#3395#5881#0" />
-                <element signature="e#5887#6650#0" />
                 <element signature="e#6656#6971#0" />
-                <element signature="e#6977#7292#0" />
                 <element signature="e#7298#7528#0" />
                 <element signature="e#7534#8371#0" />
                 <element signature="e#8377#8761#0" />
@@ -128,36 +140,24 @@
                 <element signature="e#14572#14871#0" />
                 <element signature="e#14877#15031#0" />
                 <element signature="e#15037#15410#0" />
+                <element signature="e#15690#16058#0" />
                 <element signature="e#16301#16566#0" />
                 <element signature="e#16572#17562#0" />
                 <element signature="e#17259#17833#0" />
                 <element signature="e#17839#17957#0" />
+                <element signature="e#18993#19254#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="398">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,8 +167,8 @@
         <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="388" column="50" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
+            <state relative-caret-position="192">
+              <caret line="420" column="26" lean-forward="true" selection-start-line="420" selection-start-column="26" selection-end-line="420" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -203,8 +203,8 @@
         <option value="$PROJECT_DIR$/src/utils/Prova1.java" />
         <option value="$PROJECT_DIR$/src/utils/DetectFaces.java" />
         <option value="$PROJECT_DIR$/src/application/Main.java" />
-        <option value="$PROJECT_DIR$/src/utils/OpenCV.java" />
         <option value="$PROJECT_DIR$/src/application/SampleController.java" />
+        <option value="$PROJECT_DIR$/src/utils/OpenCV.java" />
       </list>
     </option>
   </component>
@@ -264,15 +264,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="processamento-digital-de-imagens" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540318046138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540326746079" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/opencv/build/java/x64/opencv_java400.dll" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/opencv_java400.dll" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.24504693" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -336,12 +343,12 @@
       <workItem from="1539731709848" duration="875000" />
       <workItem from="1539909054740" duration="54000" />
       <workItem from="1540167380642" duration="10959000" />
-      <workItem from="1540302823495" duration="8227000" />
+      <workItem from="1540302823495" duration="16550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83880000" />
+    <option name="totallyTimeSpent" value="92203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +406,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/application/SampleController.java</url>
-          <line>310</line>
+          <line>311</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -612,22 +619,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/opencv/build/java/opencv-400.jar!/org/opencv/objdetect/CascadeClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/stage/FileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="389" column="16" selection-start-line="389" selection-start-column="16" selection-end-line="389" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="1124" column="23" selection-start-line="1124" selection-start-column="23" selection-end-line="1124" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/opencv-400.jar!/org/opencv/imgproc/Imgproc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1374">
+          <caret line="222" column="12" selection-start-line="222" selection-start-column="12" selection-end-line="222" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="191">
+          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#762#763#0" expanded="true" />
             <element signature="e#781#782#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/opencv/build/java/opencv-400.jar!/org/opencv/objdetect/CascadeClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="200" selection-start-line="200" selection-end-line="200" />
         </state>
       </provider>
     </entry>
@@ -647,53 +675,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/stage/FileChooser.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/awt/image/WritableRaster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="389" column="16" selection-start-line="389" selection-start-column="16" selection-end-line="389" selection-end-column="16" />
+          <caret line="356" column="16" selection-start-line="356" selection-start-column="16" selection-end-line="356" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/nio/file/Files.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="1124" column="23" selection-start-line="1124" selection-start-column="23" selection-end-line="1124" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="539">
+          <caret line="1345" column="32" selection-start-line="1345" selection-start-column="32" selection-end-line="1345" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="388" column="50" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
+        <state relative-caret-position="192">
+          <caret line="420" column="26" lean-forward="true" selection-start-line="420" selection-start-column="26" selection-end-line="420" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+        <state relative-caret-position="224">
+          <caret line="550" column="30" selection-start-line="550" selection-start-column="30" selection-end-line="550" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2356#2608#0" />
+            <element signature="initializer##0;class#SampleController#0" />
             <element signature="e#2577#2765#0" />
             <element signature="e#2771#2929#0" />
             <element signature="e#2935#3083#0" />
             <element signature="e#3089#3249#0" />
             <element signature="e#3255#3389#0" />
             <element signature="e#3395#5881#0" />
-            <element signature="e#5887#6650#0" />
             <element signature="e#6656#6971#0" />
-            <element signature="e#6977#7292#0" />
             <element signature="e#7298#7528#0" />
             <element signature="e#7534#8371#0" />
             <element signature="e#8377#8761#0" />
@@ -716,10 +733,22 @@
             <element signature="e#14572#14871#0" />
             <element signature="e#14877#15031#0" />
             <element signature="e#15037#15410#0" />
+            <element signature="e#15690#16058#0" />
             <element signature="e#16301#16566#0" />
             <element signature="e#16572#17562#0" />
             <element signature="e#17259#17833#0" />
             <element signature="e#17839#17957#0" />
+            <element signature="e#18993#19254#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,11 +759,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>processamento-digital-de-imagens:jar</last-edited>
+          <last-edited>processamento-digital-de-imagens</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24504693" />
                 <option value="0.5" />
               </list>
             </option>
@@ -747,7 +776,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24504693" />
               </list>
             </option>
           </splitter-proportions>
@@ -755,10 +784,11 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>opencv-400</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.22627737" />
               </list>
             </option>
           </splitter-proportions>
@@ -770,7 +800,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.22627737" />
               </list>
             </option>
           </splitter-proportions>
@@ -782,7 +812,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24504693" />
               </list>
             </option>
           </splitter-proportions>
@@ -790,10 +820,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>opencv-400</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24504693" />
               </list>
             </option>
           </splitter-proportions>
