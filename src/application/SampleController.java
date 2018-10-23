@@ -596,6 +596,12 @@ public class SampleController {
 
     // copia uma imagem para pasta temporária
     public Boolean criaCacheImagem(Image img) {
+
+        // se pasta de cache não existir, cria
+        if(!checkFolder("./src/imgs/temp/")){
+            new File("./src/imgs/temp/").mkdirs();
+        }
+
         try {
             File temp = new File("./src/imgs/temp/temp.png");
             BufferedImage bImg = SwingFXUtils.fromFXImage(img, null);
@@ -623,6 +629,15 @@ public class SampleController {
             for (File toDelete : sun) {
                 toDelete.delete();
             }
+        }
+    }
+
+    public Boolean checkFolder(String pasta) {
+        File folder = new File(pasta);
+        if(folder.exists()){
+            return true;
+        } else {
+            return false;
         }
     }
 }
