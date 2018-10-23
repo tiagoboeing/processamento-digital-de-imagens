@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/utils/OpenCV.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/OpenCV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/OpenCV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/OpenCV.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,12 +76,12 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="12663" />
+          <entry key="java" value="12666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12663" />
+          <entry key="JAVA" value="12666" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -143,44 +141,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="390">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#detectFaces#0;class#OpenCV#0" />
                 <element signature="method#tonsDeCinza#0;class#OpenCV#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/PDIClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-              <folding>
-                <element signature="method#tonsDeCinza#0;class#PDIClass#0" />
-                <element signature="method#limiarizacao#0;class#PDIClass#0" />
-                <element signature="method#negativa#0;class#PDIClass#0" />
-                <element signature="method#mediaCores#0;class#PDIClass#0" />
-                <element signature="method#dividirQuadrantes#0;class#PDIClass#0" />
-                <element signature="method#equalizaHistogramaDiagonal#0;class#PDIClass#0" />
-                <element signature="method#identificaSegmentos#0;class#PDIClass#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -228,8 +197,8 @@
         <option value="$PROJECT_DIR$/src/utils/DetectFaces.java" />
         <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/application/SampleController.java" />
-        <option value="$PROJECT_DIR$/src/utils/OpenCV.java" />
         <option value="$PROJECT_DIR$/src/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/utils/OpenCV.java" />
       </list>
     </option>
   </component>
@@ -298,7 +267,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540327419584" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540328149743" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/opencv_java400.dll" />
@@ -368,12 +337,12 @@
       <workItem from="1539731709848" duration="875000" />
       <workItem from="1539909054740" duration="54000" />
       <workItem from="1540167380642" duration="10959000" />
-      <workItem from="1540302823495" duration="17223000" />
+      <workItem from="1540302823495" duration="17952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92876000" />
+    <option name="totallyTimeSpent" value="93605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +357,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.141258" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.141258" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -397,7 +366,7 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22017354" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.22017354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3253796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,13 +721,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="385">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#tonsDeCinza#0;class#OpenCV#0" />
           </folding>
         </state>
       </provider>
@@ -779,12 +747,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="390">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#detectFaces#0;class#OpenCV#0" />
+            <element signature="method#tonsDeCinza#0;class#OpenCV#0" />
           </folding>
         </state>
       </provider>
