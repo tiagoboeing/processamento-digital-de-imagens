@@ -16,6 +16,9 @@ import java.io.IOException;
 
 public class OpenCV {
 
+    // CARREGA BIBLIOTECAS DO OPENCV
+    static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
+
     public static Image detectPatterns(File file, String classificador) {
 
         CascadeClassifier faceDetector = new CascadeClassifier("./src/classificadores/" + classificador);
@@ -66,5 +69,70 @@ public class OpenCV {
         }
     }
 
+    public static void canny(){
+        try {
+            String inputFile = "./src/imgs/temp/temp.png";
+            String outputFile = "./src/imgs/temp/canny.png";
+
+            Mat matImgDst = new Mat();
+            Mat matImgSrc = Imgcodecs.imread(inputFile);
+
+            Imgproc.Canny(matImgSrc, matImgDst, 10, 100);
+            Imgcodecs.imwrite(outputFile, matImgDst);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void prewitt(){
+        try {
+            String inputFile = "./src/imgs/temp/temp.png";
+            String outputFile = "./src/imgs/temp/prewitt.png";
+
+            Mat matImgDst = new Mat();
+            Mat matImgSrc = Imgcodecs.imread(inputFile);
+
+            int kernelSize = 9;
+
+            Mat kernel = new Mat(kernelSize,kernelSize, CvType.CV_32F) {
+                {
+                    put(0,0,-1);
+                    put(0,1,0);
+                    put(0,2,1);
+
+                    put(1,0-1);
+                    put(1,1,0);
+                    put(1,2,1);
+
+                    put(2,0,-1);
+                    put(2,1,0);
+                    put(2,2,1);
+                }
+            };
+
+            Imgproc.filter2D(matImgSrc, matImgDst, -1, kernel);
+            Imgcodecs.imwrite(outputFile, matImgDst);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void sobel(){
+        try {
+            String inputFile = "./src/imgs/temp/temp.png";
+            String outputFile = "./src/imgs/temp/sobel.png";
+
+            Mat matImgDst = new Mat();
+            Mat matImgSrc = Imgcodecs.imread(inputFile);
+
+            Imgproc.Canny(matImgSrc, matImgDst, 10, 100);
+            Imgcodecs.imwrite(outputFile, matImgDst);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }

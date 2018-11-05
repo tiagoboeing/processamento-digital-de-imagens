@@ -406,6 +406,23 @@
                                           </VBox>
                                        </content>
                                     </TitledPane>
+                                    <TitledPane expanded="false" text="OpenCV - Filtros">
+                                       <content>
+                                          <VBox>
+                                             <children>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#canny" prefHeight="36.0" prefWidth="224.0" text="CANNY" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin></Button>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#prewitt" prefHeight="36.0" prefWidth="224.0" text="PREWITT" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin></Button>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#sobel" prefHeight="36.0" prefWidth="224.0" text="SOBEL" textFill="WHITE" />
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
                                  </panes>
                                  <cursor>
                                     <Cursor fx:constant="DEFAULT" />

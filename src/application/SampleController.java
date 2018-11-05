@@ -26,7 +26,13 @@ import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.imgcodecs.Imgcodecs;
+import org.opencv.imgproc.Imgproc;
 import utils.*;
+
+import static javax.imageio.ImageIO.*;
 
 public class SampleController {
 
@@ -121,7 +127,6 @@ public class SampleController {
 
     // CARREGA BIBLIOTECAS DO OPENCV
     static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
-
 
     @FXML
     public void dividirQuadrantes() {
@@ -296,7 +301,7 @@ public class SampleController {
             if(file != null) {
                 BufferedImage bImg = SwingFXUtils.fromFXImage(imgResultado, null);
                 try {
-                    ImageIO.write(bImg, "PNG", file);
+                    write(bImg, "PNG", file);
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -535,6 +540,54 @@ public class SampleController {
     }
 
     @FXML
+    public void canny() throws IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.canny();
+
+            File file = new File("./src/imgs/temp/canny.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
+    public void prewitt() throws IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.prewitt();
+
+            File file = new File("./src/imgs/temp/prewitt.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
+    public void sobel() throws IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.sobel();
+
+            File file = new File("./src/imgs/temp/sobel.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
     public void detectPatterns() throws IOException {
         if(criaCacheImagem(img1)){
             imgResultado = OpenCV.detectPatterns(new File("./src/imgs/temp/temp.png"), classificadores.getSelectionModel().getSelectedItem().toString());
@@ -606,7 +659,7 @@ public class SampleController {
             File temp = new File("./src/imgs/temp/temp.png");
             BufferedImage bImg = SwingFXUtils.fromFXImage(img, null);
 
-            if(ImageIO.write(bImg, "png", temp)){
+            if(write(bImg, "png", temp)){
                 return true;
             } else {
                 return false;
@@ -640,4 +693,5 @@ public class SampleController {
             return false;
         }
     }
+
 }
