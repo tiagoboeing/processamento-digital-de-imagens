@@ -135,4 +135,43 @@ public class OpenCV {
         }
     }
 
+    public static void erosao(){
+        try {
+            String inputFile = "./src/imgs/temp/temp.png";
+            String outputFile = "./src/imgs/temp/erosao.png";
+
+            Mat matImgDst = new Mat();
+            Mat matImgSrc = Imgcodecs.imread(inputFile);
+
+            int kernel = 5;
+
+            Mat element = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(2 * kernel + 1, 2 * kernel + 1), new Point(kernel, kernel));
+            Imgproc.erode(matImgSrc, matImgDst, element);
+
+            Imgcodecs.imwrite(outputFile, matImgDst);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void dilatacao(){
+        try {
+            String inputFile = "./src/imgs/temp/temp.png";
+            String outputFile = "./src/imgs/temp/dilatacao.png";
+
+            Mat matImgDst = new Mat();
+            Mat matImgSrc = Imgcodecs.imread(inputFile);
+
+            int kernel = 5;
+
+            Mat element = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(2 * kernel + 1, 2 * kernel + 1), new Point(kernel, kernel));
+            Imgproc.dilate(matImgSrc, matImgDst, element);
+
+            Imgcodecs.imwrite(outputFile, matImgDst);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

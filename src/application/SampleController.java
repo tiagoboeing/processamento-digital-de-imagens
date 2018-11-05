@@ -588,6 +588,38 @@ public class SampleController {
     }
 
     @FXML
+    public void erosao() throws IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.erosao();
+
+            File file = new File("./src/imgs/temp/erosao.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
+    public void dilatacao() throws IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.dilatacao();
+
+            File file = new File("./src/imgs/temp/dilatacao.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
     public void detectPatterns() throws IOException {
         if(criaCacheImagem(img1)){
             imgResultado = OpenCV.detectPatterns(new File("./src/imgs/temp/temp.png"), classificadores.getSelectionModel().getSelectedItem().toString());

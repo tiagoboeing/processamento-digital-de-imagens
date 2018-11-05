@@ -419,6 +419,14 @@
                                                       <Insets bottom="10.0" />
                                                    </VBox.margin></Button>
                                                 <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#sobel" prefHeight="36.0" prefWidth="224.0" text="SOBEL" textFill="WHITE" />
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#erosao" prefHeight="36.0" prefWidth="224.0" text="EROSÃO" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin></Button>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#dilatacao" prefHeight="36.0" prefWidth="224.0" text="DILATAÇÃO" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin></Button>
                                              </children>
                                           </VBox>
                                        </content>
