@@ -85,6 +85,17 @@ public class OpenCV {
         }
     }
 
+//    public static void canny(){
+//        final Mat img = Imgcodecs.imread("./src/imgs/temp/temp.png");
+//        Imgproc.cvtColor(img, img, Imgproc.COLOR_BGR2GRAY);
+//
+//        // aplica canny
+//        Imgproc.Canny(img, img, threshold, threshold * 3, 3, true);
+//
+//        // guarda arquivo
+//        Imgcodecs.imwrite("./src/imgs/temp/canny.png", img);
+//    }
+
     public static void prewitt(){
         try {
             String inputFile = "./src/imgs/temp/temp.png";
@@ -120,19 +131,40 @@ public class OpenCV {
     }
 
     public static void sobel(){
-        try {
-            String inputFile = "./src/imgs/temp/temp.png";
-            String outputFile = "./src/imgs/temp/sobel.png";
 
-            Mat matImgDst = new Mat();
-            Mat matImgSrc = Imgcodecs.imread(inputFile);
+        String inputFile = "./src/imgs/temp/temp.png";
+        String outputFile = "./src/imgs/temp/sobel.png";
 
-            Imgproc.Canny(matImgSrc, matImgDst, 10, 100);
-            Imgcodecs.imwrite(outputFile, matImgDst);
+        // matriz do arquivo de entrada
+        Mat matImgSrc = Imgcodecs.imread(inputFile);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Mat grayMat = new Mat(); // guardar resultado de preto e branco
+        Mat sobel = new Mat(); // guardar resultado
+
+        Mat grad_x = new Mat();
+        Mat abs_grad_x = new Mat();
+
+        Mat grad_y = new Mat();
+        Mat abs_grad_y = new Mat();
+
+        // converte para preto e branco
+        Imgproc.cvtColor(matImgSrc, grayMat, Imgproc.COLOR_BGR2GRAY);
+
+        // calcula gradiente na direção horizontal
+        Imgproc.Sobel(grayMat, grad_x, CvType.CV_16S, 1, 0, 3, 1, 0);
+
+        // calcula gradiente na direção vertical
+        Imgproc.Sobel(grayMat, grad_y, CvType.CV_16S, 0, 1, 3, 1, 0);
+
+        // calcula valores absolutos de gradiente nas duas direções
+        Core.convertScaleAbs(grad_x, abs_grad_x);
+        Core.convertScaleAbs(grad_y, abs_grad_y);
+
+        // calculando o gradiente resultante
+        Core.addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 1, sobel);
+
+        // grava imagem na pasta
+        Imgcodecs.imwrite(outputFile, sobel);
     }
 
     public static void erosao(){
@@ -173,5 +205,41 @@ public class OpenCV {
         }
     }
 
+    public static void laplace(){
+        Mat src, src_gray = new Mat(), dst = new Mat();
+        int kernel_size = 3;
+        int scale = 1;
+        int delta = 0;
+        int ddepth = CvType.CV_16S;
 
+        src = Imgcodecs.imread("./src/imgs/temp/temp.png", Imgcodecs.IMREAD_COLOR); // Load an image
+
+        // Redução de ruído
+        // Reduce noise by blurring with a Gaussian filter ( kernel size = 3 )
+        Imgproc.GaussianBlur( src, src, new Size(3, 3), 0, 0, Core.BORDER_DEFAULT );
+
+        // Converte para preto e branco
+        Imgproc.cvtColor( src, src_gray, Imgproc.COLOR_RGB2GRAY );
+
+        /// Aplica função de laplace
+        Mat abs_dst = new Mat();
+        Imgproc.Laplacian(src_gray, dst, ddepth, kernel_size, scale, delta, Core.BORDER_DEFAULT);
+
+        // converting back to CV_8U
+        Core.convertScaleAbs(dst, abs_dst);
+
+        // guarda na pasta temporária
+        Imgcodecs.imwrite("./src/imgs/temp/laplace.png", abs_dst);
+    }
+
+    public static void remocaoRuido3x3(){
+        Mat imagemOriginal = Imgcodecs.imread("./src/imgs/temp/temp.png");
+        Mat detectaBordas = new Mat();
+
+        Imgproc.blur(imagemOriginal, detectaBordas, new Size(3, 3));
+
+        Imgcodecs.imwrite("./src/imgs/temp/ruido3x3.png", detectaBordas);
+    }
+    
 }
+

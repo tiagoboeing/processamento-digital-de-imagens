@@ -540,13 +540,29 @@ public class SampleController {
     }
 
     @FXML
+    public void OpenCVremocaoRuido3x3() throws IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.remocaoRuido3x3();
+
+            File file = new File("./src/imgs/temp/ruido3x3.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
     public void canny() throws IOException {
         if(criaCacheImagem(img1)){
             OpenCV.canny();
 
             File file = new File("./src/imgs/temp/canny.png");
             BufferedImage bufferedImage = ImageIO.read(file);
-            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);
 
             atualizaImageResultado();
             limpaPastaCache();
@@ -577,6 +593,22 @@ public class SampleController {
             OpenCV.sobel();
 
             File file = new File("./src/imgs/temp/sobel.png");
+            BufferedImage bufferedImage = ImageIO.read(file);
+            imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
+
+            atualizaImageResultado();
+            limpaPastaCache();
+        } else {
+            System.out.println("Problemas no processo de cache");
+        }
+    }
+
+    @FXML
+    public void laplace() throws  IOException {
+        if(criaCacheImagem(img1)){
+            OpenCV.laplace();
+
+            File file = new File("./src/imgs/temp/laplace.png");
             BufferedImage bufferedImage = ImageIO.read(file);
             imgResultado = SwingFXUtils.toFXImage(bufferedImage, null);;
 

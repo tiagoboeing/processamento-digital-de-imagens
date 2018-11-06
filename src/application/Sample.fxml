@@ -410,6 +410,11 @@
                                        <content>
                                           <VBox>
                                              <children>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#OpenCVremocaoRuido3x3" prefHeight="36.0" prefWidth="224.0" text="Ruído 3x3" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </Button>
                                                 <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#canny" prefHeight="36.0" prefWidth="224.0" text="CANNY" textFill="WHITE">
                                                    <VBox.margin>
                                                       <Insets bottom="10.0" />
@@ -424,6 +429,10 @@
                                                       <Insets top="10.0" />
                                                    </VBox.margin></Button>
                                                 <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#dilatacao" prefHeight="36.0" prefWidth="224.0" text="DILATAÇÃO" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin></Button>
+                                                <Button contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#laplace" prefHeight="36.0" prefWidth="224.0" text="LAPLACE" textFill="WHITE">
                                                    <VBox.margin>
                                                       <Insets top="10.0" />
                                                    </VBox.margin></Button>
