@@ -240,6 +240,6 @@ public class OpenCV {
 
         Imgcodecs.imwrite("./src/imgs/temp/ruido3x3.png", detectaBordas);
     }
-    
+
 }
 

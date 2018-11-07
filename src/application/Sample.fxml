@@ -85,8 +85,8 @@
                                        <content>
                                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                              <children>
-                                                <Slider fx:id="slider" blockIncrement="5.0" max="255.0" prefHeight="64.0" prefWidth="308.0" showTickMarks="true" value="126.0" />
-                                                <Button contentDisplay="CENTER" defaultButton="true" layoutY="78.0" mnemonicParsing="false" onAction="#limiarizacao" prefHeight="54.0" prefWidth="308.0" style="-fx-background-color: #5460ea;" text="Aplicar limiarização" textFill="WHITE" />
+                                                <Slider fx:id="slider" blockIncrement="5.0" max="255.0" prefHeight="64.0" prefWidth="239.0" showTickMarks="true" value="126.0" />
+                                                <Button contentDisplay="CENTER" defaultButton="true" layoutY="78.0" mnemonicParsing="false" onAction="#limiarizacao" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #5460ea;" text="Aplicar limiarização" textFill="WHITE" />
                                              </children>
                                           </AnchorPane>
                                        </content>

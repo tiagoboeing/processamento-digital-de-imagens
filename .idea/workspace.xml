@@ -7,14 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f243d5f-6c85-4992-bb10-2bd3fea7c4b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hs_err_pid15844.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid42340.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_processamento-digital-de-imagens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/processamento_digital_de_imagens/processamento-digital-de-imagens.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/processamento-digital-de-imagens.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/processamento-digital-de-imagens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processamento_digital_de_imagens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/processamento_digital_de_imagens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/Sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/SampleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/utils/OpenCV.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/utils/OpenCV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opencv-400.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processamento-digital-de-imagens.eml" beforeDir="false" afterPath="$PROJECT_DIR$/processamento-digital-de-imagens.eml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/OpenCV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/OpenCV.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -84,12 +86,12 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="fxml" value="51" />
-          <entry key="java" value="14535" />
+          <entry key="java" value="14536" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14535" />
+          <entry key="JAVA" value="14536" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="51" />
         </counts>
@@ -105,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="545" lean-forward="true" selection-start-line="545" selection-end-line="545" />
+              <caret line="545" selection-start-line="545" selection-end-line="545" />
               <folding>
                 <element signature="e#2528#3661#0" />
                 <element signature="initializer##0;class#SampleController#0" />
@@ -161,8 +163,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="242" column="4" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
+            <state relative-caret-position="304">
+              <caret line="153" column="56" selection-start-line="153" selection-start-column="56" selection-end-line="153" selection-end-column="56" />
               <folding>
                 <element signature="initializer##0;class#OpenCV#0" />
                 <element signature="method#detectPatterns#0;class#OpenCV#0" />
@@ -251,6 +253,11 @@
             <path>
               <item name="processamento-digital-de-imagens" type="b2602c69:ProjectViewProjectNode" />
               <item name="processamento-digital-de-imagens" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="processamento-digital-de-imagens" type="b2602c69:ProjectViewProjectNode" />
+              <item name="processamento-digital-de-imagens" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,10 +294,10 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541534116048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541554626816" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/opencv_java400.dll" />
+    <property name="last_opened_file_path" value="C:/Program Files/opencv/build/java/x64" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24504693" />
@@ -360,12 +367,12 @@
       <workItem from="1540302823495" duration="17952000" />
       <workItem from="1540332946517" duration="3970000" />
       <workItem from="1541452504085" duration="4757000" />
-      <workItem from="1541529324525" duration="4769000" />
+      <workItem from="1541529324525" duration="8514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107101000" />
+    <option name="totallyTimeSpent" value="110846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,24 +403,50 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.22668113" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.20893855" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.224581" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Structure" order="1" visible="true" weight="0.16756175" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.1716418" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.17132115" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32942432" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32942432" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.1820623" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.16791044" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -598,7 +631,7 @@
     <entry file="file://$PROJECT_DIR$/src/application/SampleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="545" lean-forward="true" selection-start-line="545" selection-end-line="545" />
+          <caret line="545" selection-start-line="545" selection-end-line="545" />
           <folding>
             <element signature="e#2528#3661#0" />
             <element signature="initializer##0;class#SampleController#0" />
@@ -652,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/OpenCV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="242" column="4" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
+        <state relative-caret-position="304">
+          <caret line="153" column="56" selection-start-line="153" selection-start-column="56" selection-end-line="153" selection-end-column="56" />
           <folding>
             <element signature="initializer##0;class#OpenCV#0" />
             <element signature="method#detectPatterns#0;class#OpenCV#0" />
@@ -672,7 +705,11 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
           <last-edited>processamento-digital-de-imagens</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -734,7 +771,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>opencv-400</last-edited>
+          <last-edited>opencv-400.jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
