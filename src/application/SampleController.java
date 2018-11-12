@@ -267,7 +267,7 @@ public class SampleController {
 
             // seta imageView 1
             imageView1.setImage(img1);
-            imageView1.setFitWidth(img1.getWidth());
+            imageView1.setFitWidth(270);
         }
     }
 
@@ -280,7 +280,7 @@ public class SampleController {
 
             // seta imageView 1
             imageView2.setImage(img2);
-            imageView2.setFitWidth(img2.getWidth());
+            imageView2.setFitWidth(270);
         }
     }
 

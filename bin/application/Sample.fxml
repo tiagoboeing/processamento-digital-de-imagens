@@ -27,7 +27,7 @@
          <left>
             <HBox styleClass="sidebar" stylesheets="@application.css" BorderPane.alignment="CENTER">
                <children>
-                  <ScrollPane hbarPolicy="NEVER" prefHeight="640.0" prefWidth="278.0">
+                  <ScrollPane hbarPolicy="NEVER">
                     <content>
                       <AnchorPane>
                            <children>
@@ -86,7 +86,7 @@
                                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                              <children>
                                                 <Slider fx:id="slider" blockIncrement="5.0" max="255.0" prefHeight="64.0" prefWidth="239.0" showTickMarks="true" value="126.0" />
-                                                <Button contentDisplay="CENTER" defaultButton="true" layoutY="78.0" mnemonicParsing="false" onAction="#limiarizacao" prefHeight="54.0" prefWidth="308.0" style="-fx-background-color: #5460ea;" text="Aplicar limiarização" textFill="WHITE" />
+                                                <Button contentDisplay="CENTER" defaultButton="true" layoutY="78.0" mnemonicParsing="false" onAction="#limiarizacao" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #5460ea;" text="Aplicar limiarização" textFill="WHITE" />
                                              </children>
                                           </AnchorPane>
                                        </content>
@@ -456,26 +456,26 @@
             </HBox>
          </left>
          <center>
-            <BorderPane BorderPane.alignment="CENTER">
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets left="10.0" />
                </BorderPane.margin>
                <center>
-                  <HBox alignment="TOP_CENTER" style="-fx-min-width: 100%;" BorderPane.alignment="CENTER">
+                  <HBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="980.0" style="-fx-min-width: 100%;" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets bottom="10.0" top="10.0" />
                      </BorderPane.margin>
                      <children>
-                        <VBox prefHeight="541.0" prefWidth="876.0">
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="980.0">
                            <children>
-                              <HBox prefHeight="53.0" prefWidth="876.0">
+                              <HBox>
                                  <children>
-                                    <Button mnemonicParsing="false" onAction="#histogram" prefHeight="32.0" prefWidth="866.0" text="HISTOGRAMA" />
+                                    <Button mnemonicParsing="false" onAction="#histogram" prefHeight="32.0" prefWidth="970.0" text="HISTOGRAMA" />
                                  </children>
                               </HBox>
-                              <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="440.0" prefWidth="876.0" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS">
+                              <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" style="-fx-background-color: #fff;" vbarPolicy="ALWAYS">
                                  <content>
-                                    <VBox>
+                                    <VBox prefHeight="372.0" prefWidth="965.0">
                                        <children>
                                           <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="862.0">
                                              <children>
@@ -508,11 +508,7 @@
                                                       <Cursor fx:constant="CROSSHAIR" />
                                                    </cursor>
                                                 </ImageView>
-                                                <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fff;">
-                                                   <children>
-                                                      <ImageView fx:id="imageViewResultado" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
-                                                   </children>
-                                                </VBox>
+                                                <ImageView fx:id="imageViewResultado" fitHeight="282.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
                                              </children>
                                           </HBox>
                                        </children>
@@ -550,7 +546,7 @@
                <top>
                   <VBox BorderPane.alignment="CENTER">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="79.0" prefWidth="877.0" style="-fx-background-color: #fff;">
+                        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #fff;">
                            <children>
                               <HBox prefHeight="100.0" prefWidth="244.0">
                                  <children>
